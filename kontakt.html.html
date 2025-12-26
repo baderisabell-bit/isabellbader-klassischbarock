@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Start – Klassisch-Barocke Dressur</title>
+<title>Kontakt – Klassisch-Barocke Dressur</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,10 +21,14 @@
   <a href="kunden.html">Kundenstimmen</a>
 </nav>
 
-<section class="hero">
-  <h1>Willkommen in der Welt der klassischen Barockreitkunst</h1>
-  <p>Individuelle Förderung von Pferd und Reiter – Harmonie & Eleganz</p>
-  <img src="placeholder.jpg" alt="Hero-Bild" class="placeholder">
+<section>
+  <h2>Kontakt</h2>
+  <form class="contact-form" action="mailto:deine.email@beispiel.de" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Dein Name" required>
+    <input type="email" name="email" placeholder="Deine E-Mail" required>
+    <textarea name="message" placeholder="Nachricht" rows="5" required></textarea>
+    <button type="submit">Absenden</button>
+  </form>
 </section>
 
 <footer>
