@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>Meine Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klassisch-Barocke Dressur – Isabell Bader</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#333;}
+    header {background:#6b4226; color:white; padding:20px 0; text-align:center;}
+    nav {background:#8c5a33; text-align:center; padding:10px 0;}
+    nav a {color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
+    nav a:hover {text-decoration:underline;}
+    section {padding:50px 20px; max-width:900px; margin:0 auto;}
+    h1,h2 {color:#6b4226;}
+    .hero {background-image:url('hero.jpg'); background-size:cover; background-position:center; color:white; text-align:center; padding:150px 20px;}
+    .hero h1 {font-size:3em; margin:0;}
+    footer {background:#8c5a33; color:white; text-align:center; padding:20px 0; margin-top:50px;}
+    .contact-form input, .contact-form textarea {width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:4px;}
+    .contact-form button {background:#6b4226; color:white; border:none; padding:10px 20px; cursor:pointer; border-radius:4px;}
+    .contact-form button:hover {background:#8c5a33;}
+    .testimonial {background:#f5f5f5; padding:20px; margin:20px 0; border-left:4px solid #6b4226;}
+  </style>
 </head>
 <body>
-<h1>Es funktioniert! 🎉</h1>
-<p>Dies ist meine erste Website.</p>
+
+<header>
+  <h1>Isabell Bader – Klassisch-Barocke Dressur</h1>
+</header>
+
+<nav>
+  <a href="#start">Start</a>
+  <a href="#ueber">Über Mich</a>
+  <a href="#unterricht">Reitunterricht</a>
+  <a href="#lehrgaenge">Lehrgänge</a>
+  <a href="#kontakt">Kontakt</a>
+  <a href="#kunden">Kundenstimmen</a>
+</nav>
+
+<section id="start" class="hero">
+  <h1>Willkommen in der Welt der klassischen Barockreitkunst</h1>
+  <p>Individuelle Förderung von Pferd und Reiter – Harmonie & Eleganz</p>
+</section>
+
+<section id="ueber">
+  <h2>Über Mich</h2>
+  <p>Ich bin Isabell Bader, spezialisiert auf klassisch-barocke Reitkunst. Mein Ziel ist, Pferd und Reiter harmonisch zusammenzuführen, mit Geduld, Erfahrung und Leidenschaft für die klassische Dressur.</p>
+</section>
+
+<section id="unterricht">
+  <h2>Reitunterricht & Beritt</h2>
+  <p>Ich biete individuell abgestimmten Reitunterricht und Beritt für alle Leistungsstufen. Jeder Reiter und jedes Pferd werden gezielt gefördert, um maximale Harmonie und Fortschritt zu erreichen.</p>
+</section>
+
+<section id="lehrgaenge">
+  <h2>Lehrgänge</h2>
+  <p>Regelmäßige Lehrgänge verbinden Theorie und Praxis, um Reiter und Pferd in der klassischen Reitkunst weiterzubringen. Gruppen- und Einzelunterricht möglich.</p>
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <form class="contact-form" action="mailto:deine.email@beispiel.de" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Dein Name" required>
+    <input type="email" name="email" placeholder="Deine E-Mail" required>
+    <textarea name="message" placeholder="Nachricht" rows="5" required></textarea>
+    <button type="submit">Absenden</button>
+  </form>
+</section>
+
+<section id="kunden">
+  <h2>Kundenstimmen</h2>
+  <div class="testimonial">
+    <p>"Isabell hat mir geholfen, meine Verbindung zu meinem Pferd zu stärken – jeder Unterricht war lehrreich und inspirierend!"</p>
+  </div>
+  <div class="testimonial">
+    <p>"Sehr professionell und einfühlsam. Mein Pferd und ich haben große Fortschritte gemacht."</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Isabell Bader – Klassisch-Barocke Dressur</p>
+</footer>
+
 </body>
 </html>
