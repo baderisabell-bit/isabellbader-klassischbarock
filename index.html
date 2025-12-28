@@ -5,16 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klassisch-barocke Dressur München - Isabell Bader</title>
     <style>
-        body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; }
-        header, footer { background-color: #f4f4f4; padding: 20px; text-align: center; }
-        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
-        section { padding: 50px 20px; max-width: 1000px; margin:auto; }
-        h1, h2, h3 { color: #333; }
-        img { max-width: 100%; height: auto; display: block; margin: 20px 0; }
-        .testimonial { background: #eee; padding: 20px; margin: 20px 0; border-radius: 5px; }
-        form input, form textarea { width: 100%; padding: 10px; margin: 5px 0; }
-        form button { padding: 10px 20px; background: #333; color: white; border: none; cursor: pointer; }
-        button:hover { opacity: 0.8; }
+        /* Schriftarten und Farben wie auf Wix */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
+
+        body { 
+            font-family: 'Roboto', sans-serif; 
+            margin:0; 
+            padding:0; 
+            line-height:1.6; 
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        h1, h2, h3 { 
+            font-family: 'Playfair Display', serif; 
+            color: #5C3D2E; /* Wix Header-Farbe */
+        }
+
+        header { 
+            background-color: #f8f4f0; /* Wix Header-Hintergrund */
+            padding: 20px; 
+            text-align: center; 
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #5C3D2E; 
+            font-weight: bold; 
+        }
+
+        nav a:hover {
+            color: #A67C52;
+        }
+
+        section { 
+            padding: 50px 20px; 
+            max-width: 1000px; 
+            margin:auto; 
+        }
+
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 20px 0; 
+        }
+
+        button { 
+            padding: 15px 30px; 
+            background-color: #A67C52; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+        }
+
+        button:hover { 
+            background-color: #5C3D2E; 
+        }
+
+        .testimonial { 
+            background: #f0ede9; 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 5px; 
+        }
+
+        form input, form textarea { 
+            width: 100%; 
+            padding: 10px; 
+            margin: 5px 0; 
+            border: 1px solid #ccc; 
+            border-radius: 5px;
+        }
+
+        form button { 
+            margin-top: 10px; 
+        }
+
+        footer { 
+            background-color: #f8f4f0; 
+            padding: 20px; 
+            text-align: center; 
+        }
     </style>
 </head>
 <body>
@@ -32,7 +110,7 @@
 
 <section id="startseite">
     <h2>Individuellen Reitunterricht erleben</h2>
-    <img src="images/bild1.jpg" alt="Mein Pferd">
+    <img src="https://via.placeholder.com/1200x500?text=Header+Bild" alt="Header Bild">
     <p>SCHAFFEN SIE EINE VERBINDUNG ZU IHREM PFERD</p>
     <button>Jetzt Termin buchen</button>
 </section>
@@ -46,7 +124,7 @@
 <section id="lehrgaenge">
     <h2>Lehrgänge</h2>
     <p>In meinen Lehrgängen verbinde ich Theorie und Praxis, um Zusammenhänge verständlich zu machen, die klassische, pferdegerechte Ausbildung ohne Zwang zu vermitteln und jeden Reiter dazu zu befähigen, Trainingspläne kritisch zu hinterfragen.</p>
-    <img src="https://via.placeholder.com/800x400?text=Lehrgaenge+Bild" alt="Lehrgänge Bild">
+    <img src="https://via.placeholder.com/800x400?text=Lehrgänge+Bild" alt="Lehrgänge Bild">
     <blockquote>„Alle Reitkunst beruht auf der Harmonie zwischen Reiter und Pferd.“ – Gustav Steinbrecht</blockquote>
 </section>
 
@@ -82,6 +160,8 @@
 
 </body>
 </html>
+
+
 
 
 
