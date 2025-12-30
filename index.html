@@ -1,583 +1,103 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Klassisch-barocke Reitweise – Isabell Bader</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Klassisch-barocker Reitunterricht und Beritt im Raum München. Pferdefreundliche Ausbildung nach klassischen Prinzipien.">
-    <style>
-        /* Grundlayout */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: "Georgia", "Times New Roman", serif;
-            line-height: 1.6;
-            color: #2b2520;
-            background-color: #f9f5f0;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        /* Farben & „barocker“ Touch */
-        :root {
-            --primary: #6b4a2b;      /* warmes Braun */
-            --primary-dark: #4b321c;
-            --accent: #c8a96b;       /* Gold-Ton */
-            --light: #fffaf3;
-        }
-
-        /* Header / Navigation */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(249,245,240,0.98);
-            backdrop-filter: blur(4px);
-            border-bottom: 1px solid #e0d4c3;
-        }
-
-        .nav-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0.5rem 1rem;
-        }
-
-        .logo {
-            font-family: "Didot", "Bodoni MT", serif;
-            font-size: 1.3rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--primary-dark);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-            font-size: 0.95rem;
-        }
-
-        nav a {
-            position: relative;
-            padding-bottom: 0.2rem;
-        }
-
-        nav a::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent);
-            transition: width 0.2s ease-out;
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        /* Hero-Bereich */
-        .hero {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 4rem 1rem 3rem;
-            display: grid;
-            grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-            gap: 2.5rem;
-            align-items: center;
-        }
-
-        .hero-text h1 {
-            font-family: "Didot", "Bodoni MT", serif;
-            font-size: 2.4rem;
-            margin-bottom: 0.75rem;
-            color: var(--primary-dark);
-        }
-
-        .hero-text h2 {
-            font-size: 1.2rem;
-            font-weight: normal;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--accent);
-            margin-bottom: 1.5rem;
-        }
-
-        .hero-text p {
-            margin-bottom: 1rem;
-        }
-
-        .hero-buttons {
-            margin-top: 1.5rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.6rem 1.1rem;
-            border-radius: 999px;
-            border: 1px solid var(--primary);
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            background: var(--primary);
-            color: #fff;
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--primary-dark);
-        }
-
-        .btn:hover {
-            background: var(--primary-dark);
-            border-color: var(--primary-dark);
-        }
-
-        .btn-outline:hover {
-            background: var(--primary);
-            color: #fff;
-        }
-
-        .hero-image {
-            background-color: #ddd;
-            border-radius: 12px;
-            border: 1px solid #cbb8a0;
-            min-height: 260px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.5rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #555;
-        }
-
-        /* Hier später dein Bild einfügen */
-        .hero-image-placeholder {
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-            background: url("DEIN-PFERDEBILD-URL-HIER.jpg") center/cover no-repeat;
-        }
-
-        /* Allgemeine Sektionen */
-        section {
-            padding: 2.5rem 1rem;
-        }
-
-        .section-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        h3.section-title {
-            font-family: "Didot", "Bodoni MT", serif;
-            font-size: 1.6rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary-dark);
-            border-left: 4px solid var(--accent);
-            padding-left: 0.75rem;
-        }
-
-        /* Über mich */
-        .about-grid {
-            display: grid;
-            grid-template-columns: minmax(0, 2fr) minmax(0, 2fr);
-            gap: 2rem;
-        }
-
-        .about-image {
-            background-color: #ddd;
-            border-radius: 12px;
-            border: 1px solid #cbb8a0;
-            min-height: 220px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.9rem;
-            color: #555;
-        }
-
-        /* Platzhalter-Bild für Portrait */
-        .about-image-placeholder {
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-            background: url("DEIN-PORTRAIT-BILD-HIER.jpg") center/cover no-repeat;
-        }
-
-        .about-text p + p {
-            margin-top: 0.75rem;
-        }
-
-        /* Angebote */
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .card {
-            background: var(--light);
-            border-radius: 10px;
-            border: 1px solid #deccb4;
-            padding: 1.5rem;
-        }
-
-        .card h4 {
-            font-family: "Didot", "Bodoni MT", serif;
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            color: var(--primary-dark);
-        }
-
-        .card p {
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .card ul {
-            list-style: disc;
-            margin-left: 1.2rem;
-            margin-top: 0.4rem;
-            font-size: 0.95rem;
-        }
-
-        /* Lehrgangsbereich mit Bild-Platzhalter */
-        .course-banner {
-            margin-top: 2rem;
-            display: grid;
-            grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-            gap: 1.5rem;
-            align-items: center;
-        }
-
-        .course-image {
-            background-color: #ddd;
-            border-radius: 12px;
-            border: 1px solid #cbb8a0;
-            min-height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.9rem;
-            color: #555;
-        }
-
-        .course-image-placeholder {
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-            background: url("DEIN-LEHRGANGS-BILD-HIER.jpg") center/cover no-repeat;
-        }
-
-        /* Kontakt */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: minmax(0, 2fr) minmax(0, 2fr);
-            gap: 2rem;
-        }
-
-        .contact-details p + p {
-            margin-top: 0.5rem;
-        }
-
-        .contact-form label {
-            display: block;
-            font-size: 0.9rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 0.45rem 0.55rem;
-            border-radius: 4px;
-            border: 1px solid #c3b3a1;
-            font-family: inherit;
-            font-size: 0.95rem;
-            margin-bottom: 0.8rem;
-            background: #fffdf8;
-        }
-
-        .contact-form textarea {
-            min-height: 110px;
-            resize: vertical;
-        }
-
-        /* Impressum / Footer */
-        footer {
-            background: #2b2520;
-            color: #f3e7d7;
-            padding: 1.5rem 1rem 1.8rem;
-            margin-top: 2rem;
-        }
-
-        .footer-inner {
-            max-width: 1100px;
-            margin: 0 auto;
-            font-size: 0.85rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 1rem;
-        }
-
-        .footer-links a {
-            margin-right: 1rem;
-            font-size: 0.85rem;
-            text-decoration: underline;
-        }
-
-        /* Responsive */
-        @media (max-width: 800px) {
-            .hero {
-                grid-template-columns: 1fr;
-            }
-            .about-grid,
-            .course-banner,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 640px) {
-            nav ul {
-                gap: 0.8rem;
-                font-size: 0.85rem;
-            }
-            .hero-text h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klassisch-barocke Dressur München – Isabell Bader</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #222; color: white; padding: 1rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; }
+    .hero { background: url('placeholder.jpg') center/cover no-repeat; color: #fff; padding: 6rem 1rem; text-align: center; }
+    section { padding: 2rem 1rem; max-width: 900px; margin: auto; }
+    .card { border: 1px solid #ddd; padding: 1rem; margin: 1rem 0; border-radius: 8px; }
+    form input, form textarea, form button { width: 100%; padding: .75rem; margin-bottom: .75rem; }
+    footer small { display: block; margin-top: 1rem; }
+  </style>
 </head>
 <body>
 
-<header>
-    <div class="nav-container">
-        <div class="logo">Klassisch Barock</div>
-        <nav>
-            <ul>
-                <li><a href="#start">Start</a></li>
-                <li><a href="#ueber-mich">Über mich</a></li>
-                <li><a href="#angebote">Unterricht & Beritt</a></li>
-                <li><a href="#lehrgaenge">Lehrgänge</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <a href="#home">Startseite</a>
+      <a href="#about">Über Mich</a>
+      <a href="#services">Reitunterricht & Beritt</a>
+      <a href="#courses">Lehrgänge</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Startseite -->
+  <section id="home" class="hero">
+    <h1>Individuellen Reitunterricht erleben</h1>
+    <p># SCHAFFEN SIE EINE VERBINDUNG ZU IHREM PFERD</p>
+    <button onclick="location.href='#contact'">Jetzt Termin buchen</button>
+  </section>
+
+  <!-- Reitunterricht & Beritt -->
+  <section id="services">
+    <h2>Reitunterricht & Beritt</h2>
+    <div class="card">
+      <img src="placeholder.jpg" alt="Reitunterricht" style="width:100%; border-radius:8px;">
+      <p>Individueller Reitunterricht und Beritt basierend auf alten Reitmeistern. Fokus auf harmonischer Verbindung zwischen Reiter und Pferd. Mehr Infos folgen …</p>
+      <a href="#contact">Mehr erfahren</a>
     </div>
-</header>
+  </section>
 
-<main id="start">
-    <!-- Hero-Bereich -->
-    <section>
-        <div class="hero">
-            <div class="hero-text">
-                <h2>Klassisch-barocke Reitweise</h2>
-                <h1>Feines Reiten aus der Tradition</h1>
-                <p>
-                    Pferdefreundliche Ausbildung nach klassischen Prinzipien im Raum München. 
-                    Im Mittelpunkt stehen Balance, Losgelassenheit und eine respektvolle Partnerschaft zwischen Reiterin und Pferd.
-                </p>
-                <p>
-                    Individueller Unterricht, Beritt und themenspezifische Lehrgänge unterstützen dich dabei, dein Pferd gesund 
-                    und motiviert auszubilden – vom Basisniveau bis zur hohen Schule.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#angebote" class="btn">Zu den Angeboten</a>
-                    <a href="#kontakt" class="btn btn-outline">Kontakt aufnehmen</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <!-- Bild-Platzhalter: Hintergrundbild in CSS setzen -->
-                <div class="hero-image-placeholder">
-                    <!-- Falls kein Bild: kurze Beschreibung -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Über mich -->
-    <section id="ueber-mich">
-        <div class="section-inner">
-            <h3 class="section-title">Über mich</h3>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        Als ausgebildete Trainerin mit Schwerpunkt klassisch-barocke Reitweise begleite ich Reiterinnen und Reiter 
-                        dabei, eine feine, pferdegerechte Kommunikation zu entwickeln. Eine ruhige Atmosphäre und kleinschrittiges Arbeiten 
-                        sind mir besonders wichtig.
-                    </p>
-                    <p>
-                        Meine Arbeit orientiert sich an den Prinzipien der alten Meister: gymnastizierende Arbeit, sorgfältige 
-                        Basisarbeit und ein klarer Fokus auf die Gesunderhaltung des Pferdes. Jeder Unterricht wird individuell 
-                        auf das Pferd-Mensch-Paar abgestimmt.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <!-- Bild-Platzhalter für Portrait -->
-                    <div class="about-image-placeholder">
-                        <!-- Hier dein Portrait-Bild via CSS-Hintergrund -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Unterricht & Beritt -->
-    <section id="angebote">
-        <div class="section-inner">
-            <h3 class="section-title">Unterricht & Beritt</h3>
-            <div class="cards">
-                <article class="card">
-                    <h4>Einzelunterricht</h4>
-                    <p>
-                        Individuelle Einheiten bei dir vor Ort oder auf ausgewählten Anlagen in der Region München.
-                    </p>
-                    <ul>
-                        <li>Feines Reiten an der Basis und in der Versammlung</li>
-                        <li>Longe, Sitzschulung und Hilfengebung</li>
-                        <li>Begleitung auf dem Weg in die klassische Dressurarbeit</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <h4>Beritt</h4>
-                    <p>
-                        Ruhiger, kleinschrittiger Aufbau für junge, sensible oder wiedereinsteigende Pferde.
-                    </p>
-                    <ul>
-                        <li>Schonender Anritt und Grundausbildung</li>
-                        <li>Weiterführende Arbeit bis hin zu Seitengängen</li>
-                        <li>Enger Austausch mit Besitzerinnen und Besitzern</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <h4>Handarbeit & Langzügel</h4>
-                    <p>
-                        Gymnastizierende Arbeit am Boden zur Verbesserung von Balance, Tragkraft und Verständigung.
-                    </p>
-                    <ul>
-                        <li>Grundlagen der Handarbeit</li>
-                        <li>Seitengänge an der Hand</li>
-                        <li>Einführung in die Langzügelarbeit</li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lehrgänge -->
-    <section id="lehrgaenge">
-        <div class="section-inner">
-            <h3 class="section-title">Lehrgänge</h3>
-            <p>
-                In regelmäßigen Abständen biete ich themenspezifische Lehrgänge an – zum Beispiel zur Handarbeit, 
-                Sitzschulung oder klassisch-barocken Elementen. Die Lehrgänge können auf verschiedenen Anlagen in 
-                der Umgebung von München stattfinden.
-            </p>
-            <div class="course-banner">
-                <div>
-                    <p>
-                        Ein typischer Lehrgang umfasst Theorieeinheiten, praktische Unterrichtseinheiten in kleinen Gruppen 
-                        und Raum für Fragen. Je nach Anlage und Teilnehmerzahl können Formate individuell angepasst werden.
-                    </p>
-                    <p style="margin-top:0.75rem;">
-                        Bei Interesse an der Ausrichtung eines Lehrgangs auf deiner Anlage melde dich gerne per E-Mail. 
-                        Genaue Termine und Inhalte werden nach Absprache festgelegt.
-                    </p>
-                </div>
-                <div class="course-image">
-                    <!-- Bild-Platzhalter für Lehrgangsszene -->
-                    <div class="course-image-placeholder">
-                        <!-- Hier dein Lehrgangs-Bild via CSS-Hintergrund -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Kontakt -->
-    <section id="kontakt">
-        <div class="section-inner">
-            <h3 class="section-title">Kontakt</h3>
-            <div class="contact-grid">
-                <div class="contact-details">
-                    <p>
-                        Für Anfragen zu Unterricht, Beritt oder Lehrgängen freue ich mich über eine Nachricht.
-                    </p>
-                    <p>
-                        <strong>E-Mail:</strong> <a href="mailto:DEINE-EMAIL@beispiel.de">DEINE-EMAIL@beispiel.de</a><br>
-                        <strong>Region:</strong> München und Umgebung
-                    </p>
-                    <p>
-                        Gerne kannst du mir kurz etwas zu dir und deinem Pferd schreiben (Alter, Ausbildungsstand, Zielvorstellungen), 
-                        damit ich dir ein passendes Angebot machen kann.
-                    </p>
-                </div>
-                <div class="contact-form">
-                    <!-- Statisches Formular (für GitHub Pages ohne Backend) -->
-                    <form>
-                        <label for="name">Name</label>
-                        <input id="name" type="text" name="name" placeholder="Dein Name">
-
-                        <label for="email">E-Mail</label>
-                        <input id="email" type="email" name="email" placeholder="deine@mail.de">
-
-                        <label for="nachricht">Nachricht</label>
-                        <textarea id="nachricht" name="nachricht" placeholder="Kurze Nachricht zu dir und deinem Pferd..."></textarea>
-
-                        <button type="submit" class="btn btn-outline">Formular (ohne Funktion) – bitte direkt mailen</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<!-- Impressum / Footer -->
-<footer>
-    <div class="footer-inner">
-        <div>
-            © <span id="year"></span> Klassisch-barocke Reitweise – Isabell Bader
-        </div>
-        <div class="footer-links">
-            <!-- Hier bei Bedarf echte Impressums-/Datenschutz-Seiten verlinken -->
-            <a href="#impressum">Impressum (Platzhalter)</a>
-            <a href="#datenschutz">Datenschutz (Platzhalter)</a>
-        </div>
+  <!-- Lehrgänge -->
+  <section id="courses">
+    <h2>Lehrgänge</h2>
+    <div class="card">
+      <img src="placeholder.jpg" alt="Lehrgänge" style="width:100%; border-radius:8px;">
+      <p>In meinen Lehrgängen verbinde ich Theorie und Praxis, um klassische, pferdegerechte Ausbildung zu vermitteln. Mehr Infos folgen …</p>
+      <a href="#contact">Mehr erfahren</a>
     </div>
-</footer>
+  </section>
 
-<script>
-    // Jahreszahl automatisch setzen
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  <!-- Zitat -->
+  <section>
+    <blockquote style="font-size:1.4rem; text-align:center; font-style:italic;">
+      „Alle Reitkunst beruht auf der Harmonie zwischen Reiter und Pferd.“ – Gustav Steinbrecht
+    </blockquote>
+  </section>
+
+  <!-- Über Mich -->
+  <section id="about">
+    <h2>Über Mich</h2>
+    <div class="card">
+      <img src="placeholder.jpg" alt="Über mich" style="width:100%; border-radius:8px;">
+      <p>Klassische Ausbildung bedeutet für mich, Ursachen zu verstehen statt Symptome zu korrigieren. Feine Hilfengebung, klare Grundlagen und ein pferdegerechtes Tempo stehen im Mittelpunkt meiner Arbeit. …</p>
+      <a href="#contact">Mehr erfahren</a>
+    </div>
+  </section>
+
+  <!-- Kunden-Erfahrungen -->
+  <section>
+    <h2>Kunden-Erfahrungen</h2>
+    <div class="card">
+      <p>„Isabell ist für mich eine besondere Reitlehrerin und Trainerin. Sie hilft mir meinem ersten eigenen Pferd Oskar bei der Jungpferdeausbildung …“</p>
+    </div>
+  </section>
+
+  <!-- Kontaktformular -->
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <form>
+      <input type="text" name="firstname" placeholder="Vorname" required>
+      <input type="text" name="lastname" placeholder="Nachname" required>
+      <input type="email" name="email" placeholder="E-Mail-Adresse" required>
+      <input type="text" name="subject" placeholder="Betreff" required>
+      <textarea name="message" rows="5" placeholder="Nachricht" required></textarea>
+      <button type="submit">Absenden</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Klassisch-barocke Dressur München – Isabell Bader</p>
+    <small>© 2025 Alle Rechte vorbehalten</small>
+  </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
