@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+
+    <title>Klassisch-barocke Dressur München - Isabell Bader</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"> </script>
+</head>
+<body>
+
+<!--HEADER-->
+<header class="header">
+        <h1>Klassisch-barocke Dressur München - Isabell Bader</h1>
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="ueber.html">Über Mich</a>
+            <a href="reitunterrichtundberitt.html">Reitunterricht und Beritt</a>
+            <a href="lehrgaenge.html">Lehrgänge</a>
+        </nav>
+</header>
+
+<!-- ÜBER MICH -->
+  <section id="ueber" class="section zitation">
+    <div class="container">
+    <h1>Schaffen sie eine Verbindung zu ihrem Pferd</h1>
+    <h3> „Alle Reitkunst beruht auf der Harmonie zwischen Reiter und Pferd.“ </h3>
+    <h3>– Gustav Steinbrecht </h3> 
+    <h4 style="margin-block: unset"> </h4>
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <a href="ueber.html#steinbrecht" class="btn">Mehr erfahren</a>
+    </div>
+</div>
+  </section>
+
+ <!-- ÜBER MICH -->
+  <section id="uebermich" class="background-section">
+    <div class="container">
+    <h1> Über Mich</h1>
+    <p> Klassische Ausbildung bedeutet für mich, Ursachen zu verstehen statt Symptome zu korrigieren. Feine Hilfengebung, klare Grundlagen und ein pferdegerechtes Tempo stehen im Mittelpunkt meiner Arbeit. Mein Unterricht ist ruhig, strukturiert und auf langfristige Gesunderhaltung ausgerichtet. Ich möchte mit Klassisch-barocke Dressur - München einen Ort schaffen, an dem die traditionellen Werte der klassischen Reitkunst hochgehalten werden, sowohl für Freizeit- als auch Turnierpferde.</p>
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <a href="ueber.html" class="btn">Mehr erfahren</a>
+    </div>
+    </div>
+  </section>
+
+<!-- Testimonial -->
+  <section class="section .highlight-block">
+  <div class="section-content testimonials">
+
+    <h2>Kundenerfahrungen</h2>
+
+    <div class="testimonial active">
+      <div class="quote">
+        <p>"Isabell ist für mich eine besondere Reitlehrerin und Trainerin. Sie hilft mir meinem ersten eigenen Pferd „Oskar“ bei der Jungpferdeausbildung. Ich fühle mich bei ihr rundum bestens aufgehoben. Sie bringt nicht nur ein enormes Fachwissen mit, sondern vor allem auch ganz viel Feingefühl, Geduld und Einfühlungsvermögen – sowohl für das Pferd als auch für den Menschen.</p>
+        <p>Isabell hört aufmerksam zu, geht individuell auf unsere Themen ein und nimmt sich immer die Zeit, genau hinzuschauen. Man merkt sofort, dass ihr das Wohl des Pferdes an erster Stelle steht. Ihre empathische Art schafft Vertrauen, und genau dieses Vertrauen ist für mich in der Arbeit mit einem jungen Pferd unglaublich wichtig. Oskar fühlt sich bei ihr sichtbar wohl, und auch ich gehe nach jeder Einheit mit einem guten Gefühl, mehr Sicherheit und neuen Erkenntnissen nach Hause.</p>
+        <p>Besonders schätze ich, dass Isabell nichts „durchdrückt“, sondern jeden Entwicklungsschritt mit Ruhe, Verständnis und Klarheit begleitet. Sie erklärt verständlich, arbeitet fein und fair und vermittelt einem das Gefühl, gemeinsam als Team zu wachsen. Für mich ist sie nicht nur eine Trainerin, sondern eine wertvolle Begleiterin auf unserem Weg.</p>
+        <p>Ich bin sehr dankbar, Isabell an meiner Seite zu haben, und kann sie von Herzen jedem empfehlen, der eine einfühlsame, kompetente und engagierte Trainerin sucht – gerade auch in der sensiblen Jungpferdeausbildung."</p>
+      </div>
+      <p class="author">– Schwerpunkt - Jungpferdeausbildung</p>
+    </div>
+
+    <div class="testimonial">
+      <div class="quote">
+        <p>"Bei Isabell steht jedes Pferd mit seinen Bedürfnissen im Mittelpunkt. Mit viel Ruhe, Geduld und Klarheit nimmt sie sich Zeit, das Pferd dort abzuholen, wo es steht. Schritt für Schritt zeigt sie einem neue Wege in der Bodenarbeit, begleitet einen verständlich und auf Augenhöhe – damit man gemeinsam lernen, feiner kommunizieren kann. 🐴✨"</p>
+      </div>
+      <p class="author">– Schwerpunkt - Handarbeit</p>
+    </div>
+
+    <div class="testimonial-controls">
+      <button class="btn" onclick="prevTestimonial()">‹</button>
+      <button class="btn" onclick="nextTestimonial()">›</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontaktformular</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="contact-section">
+    <div class="contact-box">
+      <h2>Kontakt</h2>
+      <p>Schreib mir gerne für ein Kennenlernen.</p>
+
+      <form id="contactForm" action="https://formspree.io/f/mpqwwgkd" method="POST">
+        
+        <!-- Vorname + Nachname -->
+        <div class="form-row">
+          <input type="text" name="vorname" placeholder="Vorname" required>
+          <input type="text" name="nachname" placeholder="Nachname" required>
+        </div>
+
+        <!-- E-Mail + Betreff -->
+        <div class="form-row">
+          <input type="email" name="email" placeholder="E-Mail" required>
+          <input type="text" name="betreff" placeholder="Betreff" required>
+        </div>
+
+        <!-- Nachricht -->
+        <textarea name="nachricht" placeholder="Deine Nachricht" required></textarea>
+
+        <!-- Senden Button -->
+        <div class="button-wrapper">
+          <button type="submit" class="btn">Senden</button>
+        </div>
+
+      </form>
+
+      <!-- Danke Nachricht -->
+      <p id="dankeText" class="thank-you">Danke für deine Nachricht!</p>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+    <!-- NAVIGATION -->
+    <div class="footer-block">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="ueber.html">Über mich</a></li>
+        <li><a href="reitunterrichtundberitt.html">Reitunterricht & Beritt</a></li>
+        <li><a href="lehrgaenge.html">Lehrgänge</a></li>
+      </ul>
+    </div>
+
+    <!-- RECHTLICH -->
+    <div class="footer-block">
+      <h3>Rechtliches</h3>
+      <ul>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="agb.html">AGB</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 – Klassisch-barocke Reitkunst
+  </div>
+
+</footer>
+
+</body>
+</html>
