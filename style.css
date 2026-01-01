@@ -342,7 +342,7 @@ button:hover,
 
 #uebermich {
   position: relative;
-  background-image: url("images/pferd.jpg");
+  background-image: url("./images/pferd.jpg");
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -496,3 +496,4 @@ button.btn:hover {
     flex-direction: column;
   }
 }
+
