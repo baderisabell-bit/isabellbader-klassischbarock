@@ -370,12 +370,14 @@ button:hover,
 .fullwidth-image img {
   width: 100%;       /* Bild immer so breit wie der Container / Bildschirm */
   height:fit-content;      /* Höhe proportional */
-  display: block;    /* verhindert unerwünschte Lücken unter dem Bild */
+  display: block;
+   justify-content: center;
 }
 
 @media (max-width: 768px) {
   .fullwidth-image {
     padding: 20px 0;
+   display: block;
   }
 
   .fullwidth-image img {
@@ -552,6 +554,7 @@ button.btn:hover {
     margin-top: 20px;
   }
 }
+
 
 
 
