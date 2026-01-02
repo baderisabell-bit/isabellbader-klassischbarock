@@ -373,6 +373,21 @@ button:hover,
   display: block;    /* verhindert unerwünschte Lücken unter dem Bild */
 }
 
+.full-image img {
+  width: 100%;       /* Bild immer so breit wie der Container / Bildschirm */
+  height:fit-content;      /* Höhe proportional */
+  display: block; 
+}
+
+@media (max-width: 768px) {
+  .full-image {
+    padding: 20px 0;
+  }
+
+  .full-image img {
+    max-width: 100%;
+  }
+
 
 /* =========================
    KONTAKTFORMULAR
@@ -543,3 +558,4 @@ button.btn:hover {
     margin-top: 20px;
   }
 }
+
