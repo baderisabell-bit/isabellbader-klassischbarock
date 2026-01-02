@@ -377,6 +377,7 @@ button:hover,
   width: 100%;       /* Bild immer so breit wie der Container / Bildschirm */
   height:fit-content;      /* Höhe proportional */
   display: block; 
+   megin: center;
 }
 
 /* =========================
@@ -548,5 +549,6 @@ button.btn:hover {
     margin-top: 20px;
   }
 }
+
 
 
