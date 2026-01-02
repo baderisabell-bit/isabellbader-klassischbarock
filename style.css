@@ -547,15 +547,29 @@ button.btn:hover {
 /* Mobile Ansicht */
 @media (max-width: 768px) {
   .content-block {
-    flex-direction: flex;
-     width: 100%;
+    flex-direction: column;  /* stapeln */
     text-align: center;
-     gap: 20px;
+    gap: 20px;               /* Abstand zwischen Text & Bild */
   }
-.content-block .image {
-   margin-bottom: 0px;
+
+  .content-block .image {
+    margin-top: 0;            /* kein zusätzlicher Abstand */
+    margin-bottom: 0;         /* bündiger Abschluss */
+    width: 100%;              /* Bild füllt Container */
+    max-width: 300px;         /* optional für Mobile */
+    display: block;
+    margin-left: auto;        /* zentriert */
+    margin-right: auto;
+  }
+
+  .content-block > .text,
+  .content-block > .image {
+    max-width: 100%;           /* volle Breite auf Mobile */
+    padding: 0 20px;
   }
 }
+
+
 
 
 
