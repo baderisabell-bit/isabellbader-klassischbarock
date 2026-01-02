@@ -373,11 +373,19 @@ button:hover,
   display: block;    /* verhindert unerwünschte Lücken unter dem Bild */
 }
 
+.full-image {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center; /* zentriert Bild */
+}
+
+/* Bild responsiv */
 .full-image img {
-  width: 100%;       /* Bild immer so breit wie der Container / Bildschirm */
-  height:fit-content;      /* Höhe proportional */
-  display: block; 
-   megin: center;
+  width: 100%;        /* füllt den verfügbaren Platz */
+  max-width: 1100px;  /* Desktop-Begrenzung */
+  height: auto;
+  display: block;
 }
 
 /* =========================
@@ -549,6 +557,7 @@ button.btn:hover {
     margin-top: 20px;
   }
 }
+
 
 
 
