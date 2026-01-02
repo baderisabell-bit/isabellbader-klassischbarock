@@ -547,7 +547,8 @@ button.btn:hover {
 /* Mobile Ansicht */
 @media (max-width: 768px) {
   .content-block {
-    flex-direction: column;
+    flex-direction: flex;
+     width: 100%;
     text-align: center;
      gap: 20px;
   }
@@ -555,6 +556,7 @@ button.btn:hover {
    margin-bottom: 0px;
   }
 }
+
 
 
 
