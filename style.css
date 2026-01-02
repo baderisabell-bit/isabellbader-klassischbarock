@@ -373,19 +373,14 @@ button:hover,
   display: block;    /* verhindert unerwünschte Lücken unter dem Bild */
 }
 
-.full-image {
-  width: 100%;
-  padding: 40px 0;
-  display: flex;
-  justify-content: center; /* zentriert Bild */
-}
+@media (max-width: 768px) {
+  .fullwidth-image {
+    padding: 20px 0;
+  }
 
-/* Bild responsiv */
-.full-image img {
-  width: 100%;        /* füllt den verfügbaren Platz */
-  max-width: 1100px;  /* Desktop-Begrenzung */
-  height: auto;
-  display: block;
+  .fullwidth-image img {
+    max-width: 100%;
+  }
 }
 
 /* =========================
@@ -557,6 +552,7 @@ button.btn:hover {
     margin-top: 20px;
   }
 }
+
 
 
 
