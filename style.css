@@ -550,11 +550,8 @@ button.btn:hover {
     flex-direction: column !important;
     text-align: center;
   }
-  .content-block .image {
-    margin-top: 20px;
-   margin-bottom: 0px;
-  }
 }
+
 
 
 
