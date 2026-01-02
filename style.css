@@ -545,35 +545,8 @@ button.btn:hover {
 }
 
 /* Mobile Ansicht */
-@media (max-width: 768px) {
-  .content-block {
-    flex-direction: column;   /* Stapeln */
-    align-items: center;       /* Text & Bild zentrieren */
-    text-align: center;
-    padding-bottom: 30px;     /* Abstand zum nächsten Block */
-  }
 
-  /* Innerer Container passt sich an */
-  .content-block .text .container {
-    width: 100%;             /* volle Breite */
-    margin-bottom: 0;        /* kein extra Abstand */
-    padding: 0;              /* optional, wenn nötig */
-  }
 
-  /* Bild */
-  .content-block .image {
-    width: 100%;             /* Bild füllt Container */
-    max-width: 300px;        /* optional für Mobile */
-    margin-top: 0;
-    margin-bottom: 0;        /* bündiger Abschluss */
-  }
-
-  .content-block .image img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-}
 
 
 
