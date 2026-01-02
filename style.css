@@ -379,16 +379,6 @@ button:hover,
   display: block; 
 }
 
-@media (max-width: 768px) {
-  .full-image {
-    padding: 20px 0;
-  }
-
-  .full-image img {
-    max-width: 100%;
-  }
-
-
 /* =========================
    KONTAKTFORMULAR
    ========================= */
@@ -558,4 +548,5 @@ button.btn:hover {
     margin-top: 20px;
   }
 }
+
 
