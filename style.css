@@ -551,9 +551,10 @@ button.btn:hover {
     text-align: center;
   }
   .content-block .image {
-    margin-top: 20px;
+    margin-top: 0;
   }
 }
+
 
 
 
