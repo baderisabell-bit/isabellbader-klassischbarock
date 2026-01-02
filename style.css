@@ -374,7 +374,7 @@ button:hover,
    justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .fullwidth-image {
     padding: 40px 0;
    display: block;
@@ -554,6 +554,7 @@ button.btn:hover {
     margin-top: 20px;
   }
 }
+
 
 
 
