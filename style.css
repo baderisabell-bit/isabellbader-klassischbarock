@@ -545,7 +545,7 @@ button.btn:hover {
 }
 
 /* Mobile Ansicht */
-@media {
+@media (max-width: 800px) {
   .content-block {
     flex-direction: column;
     text-align: center;
@@ -555,6 +555,7 @@ button.btn:hover {
    margin-bottom: 0px;
   }
 }
+
 
 
 
