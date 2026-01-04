@@ -586,6 +586,27 @@ button.btn:hover {
   padding: 0;
 }
 
+/* =========================
+   FULLWIDTH IMAGE – HARTER RESET
+========================= */
+
+section.fullwidth-image {
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 0;
+  background: none;
+}
+
+section.fullwidth-image picture {
+  display: block;
+  line-height: 0;
+}
+
+section.fullwidth-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 
 
