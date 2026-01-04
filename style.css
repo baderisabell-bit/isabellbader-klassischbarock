@@ -63,6 +63,13 @@ body {
   line-height: 1.7;
 }
 
+@media (min-width: 769px) {
+  .desktop-paragraphs p + p {
+    margin-top: 24px;
+  }
+}
+
+
 /* =========================
    HEADER & NAVIGATION
    ========================= */
@@ -608,6 +615,7 @@ section.fullwidth-image img {
   width: 100%;
   height: auto;
 }
+
 
 
 
