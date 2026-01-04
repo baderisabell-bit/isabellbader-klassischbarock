@@ -545,19 +545,15 @@ button.btn:hover {
 }
 
 /* Mobile Ansicht */
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 768px) {
+  .content-block {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .content-block .image {
+    margin-top: 20px;
+  }
+}
 
 
 
