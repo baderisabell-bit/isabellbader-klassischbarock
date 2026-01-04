@@ -394,6 +394,13 @@ button:hover,
   }
 }
 
+@media (max-width: 768px) {
+  #uebermich {
+    background-position: center top; /* Motiv oben zentrieren */
+    background-size: cover;          /* bleibt gleich, füllt weiter den Container */
+  }
+}
+
 /* =========================
    KONTAKTFORMULAR
    ========================= */
@@ -617,6 +624,7 @@ section.fullwidth-image img {
   width: 100%;
   height: auto;
 }
+
 
 
 
