@@ -71,6 +71,10 @@ body {
     margin-top: 32px !important;
 }
 
+.desktop-paragraphs p + ul {
+    margin-top: 32px !important;
+}
+
 
 /* =========================
    HEADER & NAVIGATION
@@ -624,6 +628,7 @@ section.fullwidth-image img {
   width: 100%;
   height: auto;
 }
+
 
 
 
