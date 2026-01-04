@@ -557,9 +557,10 @@ button.btn:hover {
   }
    
   .content-block .image {
-    margin-top: 20px;
-    margin-top: 20px;
-  }
+  order: 2;
+  margin-top: 20px;
+}
+
    .content-block .image img {
     width: 100%;
     height: auto;
@@ -607,6 +608,7 @@ section.fullwidth-image img {
   width: 100%;
   height: auto;
 }
+
 
 
 
