@@ -549,11 +549,43 @@ button.btn:hover {
   .content-block {
     flex-direction: column !important;
     text-align: center;
+    padding: 40px 20px; 
   }
+   
+ .content-block .text {
+    order: 1;
+  }
+   
   .content-block .image {
     margin-top: 20px;
+    margin-top: 20px;
+  }
+   .content-block .image img {
+    width: 100%;
+    height: auto;
   }
 }
+
+
+/* =========================
+   FULLWIDTH IMAGE FIX
+========================= */
+
+.fullwidth-image {
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+.fullwidth-image picture,
+.fullwidth-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
 
 
 
