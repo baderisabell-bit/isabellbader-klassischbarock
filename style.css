@@ -67,7 +67,7 @@ body {
     margin-top: 24px;
 }
 
-.desktop-paragraphs p + ul {
+.desktop-paragraphs p + h4 {
     margin-top: 24px;
 }
 
@@ -617,6 +617,7 @@ section.fullwidth-image img {
   width: 100%;
   height: auto;
 }
+
 
 
 
