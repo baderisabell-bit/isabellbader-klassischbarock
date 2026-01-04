@@ -64,11 +64,11 @@ body {
 }
 
 .desktop-paragraphs p + p {
-    margin-top: 24px;
+    margin-top: 24px !important;
 }
 
 .desktop-paragraphs p + h4 {
-    margin-top: 32px;
+    margin-top: 32px !important;
 }
 
 
@@ -617,6 +617,7 @@ section.fullwidth-image img {
   width: 100%;
   height: auto;
 }
+
 
 
 
