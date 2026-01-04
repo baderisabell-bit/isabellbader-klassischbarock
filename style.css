@@ -629,6 +629,69 @@ section.fullwidth-image img {
   height: auto;
 }
 
+* =========================
+   ANGEBOT
+========================= */
+.section.angebot {
+  background-color: white;
+  padding: 5rem 0 5rem 0; /* nur oben Abstand */
+}
+
+.section.angebot .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 4rem;
+  background-color: white;
+  border-radius: 12px; /* Gesamtcontainer rund */
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* optional, nur außen */
+}
+
+/* Wrapper */
+.angebote-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0; /* kein vertikaler Abstand */
+  align-items: stretch;
+}
+
+/* Blöcke */
+.angebot-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0; /* nur oben rund, unten eckig */
+  justify-content: space-between;
+  margin-bottom: 0;
+  position: relative; 
+}
+
+/* Buttons */
+.angebot-block .btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  background-color: #f6f3ef;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .angebote-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .angebot-block {
+    border-radius: 12px 12px 12px 12px; /* wieder rund, da einzelne Blöcke */
+  }
+}
+
 
 
 
