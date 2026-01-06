@@ -691,10 +691,16 @@ section.fullwidth-image img {
     gap: 0;
   }
 
+.section.angebot .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .angebot-block {
     border-radius: 12px 12px 12px 12px; /* wieder rund, da einzelne Blöcke */
   }
 }
+
 
 
 
