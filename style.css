@@ -186,6 +186,10 @@ nav a:hover::after {
   margin-bottom: 0.5rem;
 }
 
+.section.angebot {
+  margin-bottom: 0;
+}
+
 /* =========================
    LISTEN
    ========================= */
@@ -691,6 +695,7 @@ section.fullwidth-image img {
     border-radius: 12px 12px 12px 12px; /* wieder rund, da einzelne Blöcke */
   }
 }
+
 
 
 
