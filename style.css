@@ -686,10 +686,6 @@ section.fullwidth-image img {
 
 /* Mobile */
 @media (max-width: 768px) {
-  .angebote-wrapper {
-    flex-direction: column;
-    gap: 0;
-  }
 
 .section.angebot .container {
     padding-left: 0;
@@ -700,6 +696,7 @@ section.fullwidth-image img {
     border-radius: 0
   }
 }
+
 
 
 
