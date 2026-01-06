@@ -79,15 +79,13 @@ body {
 /* =========================
    HEADER & NAVIGATION
    ========================= */
-/* HEADER */
 .header {
-  background-color: #ffffff;
+  text-align: center;  /* H1 und NAV zentrieren */
+  background-color: #fff;
+  padding: 1rem;
   border-bottom: 1px solid #ddd;
-  padding: 1rem 1rem;
-  text-align: center;
 }
 
-/* H1 */
 .header h1 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -95,14 +93,11 @@ body {
 
 /* NAV */
 .main-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: inline-flex;       /* Inline-flex, damit es mittig bleibt */
+  gap: 2rem;                  /* Abstand zwischen den Links */
 }
 
 .main-nav a {
-  position: relative;
   text-decoration: none;
   color: #2b2b2b;
   font-weight: 500;
@@ -113,32 +108,27 @@ body {
 /* Hover-Balken */
 .main-nav a::after {
   content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
+  display: block;
   height: 2px;
-  background-color: #7a6a58;
-  transition: width 0.3s ease;
+  width: 0;
+  background: #7a6a58;
+  transition: width 0.3s;
 }
 
 .main-nav a:hover::after {
   width: 100%;
 }
 
-/* RESPONSIVE: Mobil */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .main-nav {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  /* Links mittig untereinander */
     gap: 1rem;
   }
-
-  .main-nav a {
-    width: 100%;       /* Link füllt Breite */
-    text-align: center;
-  }
 }
+
 
 
 h1 {
@@ -757,6 +747,7 @@ section.fullwidth-image img {
   }
 
 }
+
 
 
 
