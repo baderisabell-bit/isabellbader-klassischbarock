@@ -687,24 +687,19 @@ section.fullwidth-image img {
 /* Mobile */
 @media (max-width: 768px) {
 
-.section.angebot {
+  .fullwidth-mobile {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* Container aushebeln */
-  .section.angebot .container {
-    width: 100vw;
-    max-width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+  .fullwidth-mobile > .container {
+    max-width: none;
+    width: 100%;
+    margin: 0;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .angebot-block {
-    border-radius: 0
-  }
 }
 
 
