@@ -704,76 +704,61 @@ section.fullwidth-image img {
   height: auto;
 }
 
-* =========================
-   ANGEBOT
-========================= */
+/* =========================
+   ANGEBOT (Optimiert)
+   ========================= */
 .section.angebot {
   background-color: white;
-  padding: 5rem 0 5rem 0; /* nur oben Abstand */
+  padding: 3rem 0; /* Vereinheitlicht mit anderen Sektionen */
 }
 
+/* Der Container sorgt für die Begrenzung der Breite */
 .section.angebot .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 3rem 4rem;
+  padding: 1.5rem; /* Gleiches Padding wie in deiner Basis .container Klasse */
   background-color: white;
-  border-radius: 12px; /* Gesamtcontainer rund */
-  position: relative;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* optional, nur außen */
 }
 
-/* Wrapper */
+/* Wrapper für die Blöcke */
 .angebote-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 0; /* kein vertikaler Abstand */
-  align-items: stretch;
+  gap: 2rem; /* Abstand zwischen den beiden Boxen */
 }
 
-/* Blöcke */
 .angebot-block {
   flex: 1;
+  min-width: 300px; /* Damit sie auf kleinen Screens untereinander springen */
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 1.5rem;
-  background-color: white;
-  border-radius: 0; /* nur oben rund, unten eckig */
+  padding: 2rem;
+  background-color: #f6f3ef; /* Etwas Abhebung zum weißen Hintergrund */
+  border-radius: 8px;
   justify-content: space-between;
-  margin-bottom: 0;
-  position: relative; 
 }
 
-/* Buttons */
-.angebot-block .btn {
-  padding: 0.8rem 1.6rem;
-  border-radius: 30px;
-  background-color: #f6f3ef;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  color: black;
-}
-
-/* Mobile */
+/* RESPONSIVE FIX FÜR ANGEBOT */
 @media (max-width: 768px) {
-
-  .fullwidth-mobile {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .fullwidth-mobile > .container {
-    max-width: none;
+  .section.angebot .container {
+    /* Hier stellen wir sicher, dass das Padding exakt wie beim Rest ist */
+    padding: 2rem 1.5rem; 
     width: 100%;
-    margin: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
+  .angebote-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* Entferne die alte .fullwidth-mobile Logik, falls noch vorhanden */
+  .fullwidth-mobile > .container {
+    max-width: 1100px !important;
+    width: auto !important;
+    margin: 0 auto !important;
+  }
 }
-
-
 
 
 
