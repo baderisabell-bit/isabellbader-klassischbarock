@@ -77,10 +77,11 @@ body {
 
 
 /* =========================
-   HEADER & NAVIGATION
+   HEADER & NAVIGATION NEU
    ========================= */
 .header {
-  text-align: center;  /* H1 und NAV zentrieren */
+  position: relative;
+  text-align: center;
   background-color: #fff;
   padding: 1rem;
   border-bottom: 1px solid #ddd;
@@ -91,10 +92,32 @@ body {
   margin-bottom: 1rem;
 }
 
-/* NAV */
+/* Verstecke den Hamburger-Button standardmäßig auf Desktop */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 10px auto; /* Zentriert den Button mobil */
+}
+
+.menu-toggle span {
+  width: 100%;
+  height: 3px;
+  background-color: #7a6a58;
+  transition: all 0.3s ease;
+}
+
+/* NAVIGATION DESKTOP */
 .main-nav {
-  display: inline-flex;       /* Inline-flex, damit es mittig bleibt */
-  gap: 2rem;                  /* Abstand zwischen den Links */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .main-nav a {
@@ -103,32 +126,34 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   padding: 0.5rem 0;
+  font-size: 0.95rem;
 }
 
-/* Hover-Balken */
-.main-nav a::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0;
-  background: #7a6a58;
-  transition: width 0.3s;
-}
-
-.main-nav a:hover::after {
-  width: 100%;
-}
-
-/* RESPONSIVE */
+/* MOBIL-STYLING (max-width: 768px) */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Zeige Button auf Handy */
+  }
+
   .main-nav {
-    display: flex;
+    display: none; /* Verstecke Links standardmäßig */
     flex-direction: column;
-    align-items: center;  /* Links mittig untereinander */
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 0;
     gap: 1rem;
   }
-}
 
+  /* Diese Klasse wird per JS hinzugefügt, wenn das Menü offen ist */
+  .main-nav.active {
+    display: flex;
+  }
+  
+  /* Kleiner Effekt: Hamburger wird zum X (optional) */
+  .menu-toggle.open span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+  .menu-toggle.open span:nth-child(2) { opacity: 0; }
+  .menu-toggle.open span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+}
 
 
 h1 {
@@ -747,6 +772,7 @@ section.fullwidth-image img {
   }
 
 }
+
 
 
 
