@@ -507,7 +507,7 @@ section.fullwidth-image.flaches-bild picture {
 
 section.fullwidth-image.flaches-bild picture img {
     width: 85% !important;   /* Rand auf Desktop */
-    max-width: 800px !important; 
+    max-width: 1000px !important; 
     height: auto !important;
     display: block;
     margin: 0 auto;
@@ -821,6 +821,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
