@@ -507,7 +507,7 @@ section.fullwidth-image.hero-narrow img {
 
     section.fullwidth-image.flaches-bild img {
         /* Rand erzeugen: Entweder über % oder eine feste maximale Breite */
-        width: 90% !important; 
+        width: 95% !important; 
         max-width: 900px !important; 
 
         /* Höhe festlegen */
@@ -829,6 +829,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
