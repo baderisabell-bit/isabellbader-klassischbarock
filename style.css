@@ -492,25 +492,14 @@ section.fullwidth-image.hero-narrow img {
     height: 250px !important;
   }
 }
-/* Die Section und das Picture-Tag flexibel machen */
-section.fullwidth-image.flaches-bild,
-section.fullwidth-image.flaches-bild picture {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0 !important;
-    margin: 0 !important;
-    line-height: 0;
+
+section.fullwidth-image.flaches-bild img {
+  height: 600px !important; /* Hier die gewünschte Höhe für alle einstellen */
+  object-fit: cover;        /* Verhindert Verzerrung */
+  object-position: center;  /* Richtet den Fokus auf die Mitte des Bildes */
+  width: 85% !important;
 }
 
-/* Das Bild innerhalb von Picture ansprechen */
-section.fullwidth-image.flaches-bild picture img {
-    width: 85% !important;   /* Deine gewünschte Breite */
-    max-width: 800px !important; 
-    height: 600px !important;
-    display: block;
-    margin: 0 auto;         /* Sicherungskopie für die Zentrierung */
-}
 
 /* =========================
    KONTAKTFORMULAR
@@ -807,6 +796,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
