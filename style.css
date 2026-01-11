@@ -492,6 +492,25 @@ section.fullwidth-image.hero-narrow img {
     height: 250px !important;
   }
 }
+
+section.fullwidth-image.flaches-bild {
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 0;       /* Verhindert winzige Lücken unter dem Bild */
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Das Bild innerhalb der Section */
+section.fullwidth-image.flaches-bild img {
+    width: 85%;           /* Hier stellst du ein, wie viel Platz links/rechts ist */
+    max-width: 1000px;    /* Maximale Breite, damit es nicht zu riesig wird */
+    height: auto !important;
+    margin: 0;
+    display: block;
+}
+
 /* =========================
    KONTAKTFORMULAR
    ========================= */
@@ -787,6 +806,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
