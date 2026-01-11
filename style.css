@@ -480,21 +480,18 @@ button:hover,
   }
 }
 
-/* Spezielle Klasse für flachere Bilder */
-.fullwidth-image.hero-narrow img {
-    height: 400px !important; /* Teste hier mal 300px */
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
+section.fullwidth-image.hero-narrow img {
+  height: 400px !important; /* Hier die gewünschte Höhe für alle einstellen */
+  object-fit: cover;        /* Verhindert Verzerrung */
+  object-position: center;  /* Richtet den Fokus auf die Mitte des Bildes */
 }
 
-/* Optional: Auf dem Handy etwas niedriger */
+/* Optional: Mobil noch schmaler für bessere Lesbarkeit */
 @media (max-width: 768px) {
-    .fullwidth-image.hero-narrow img {
-        height: 250px;
-    }
+  section.fullwidth-image.flaches-bild img {
+    height: 250px !important;
+  }
 }
-
 /* =========================
    KONTAKTFORMULAR
    ========================= */
@@ -790,6 +787,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
