@@ -488,7 +488,7 @@ section.fullwidth-image.hero-narrow img {
 
 /* Optional: Mobil noch schmaler für bessere Lesbarkeit */
 @media (max-width: 768px) {
-  section.fullwidth-image.flaches-bild img {
+  section.fullwidth-image.hero-narrow img {
     height: 250px !important;
   }
 }
@@ -787,6 +787,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
