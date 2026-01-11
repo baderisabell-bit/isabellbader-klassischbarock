@@ -482,7 +482,7 @@ button:hover,
 
 /* Spezielle Klasse für flachere Bilder */
 .fullwidth-image.hero-narrow img {
-    height: 350px;       /* Hier die gewünschte maximale Höhe einstellen */
+    height: 300px;       /* Hier die gewünschte maximale Höhe einstellen */
     object-fit: cover;   /* Sorgt dafür, dass das Bild nicht verzerrt wird */
     object-position: center; /* Zentriert den Bildausschnitt */
 }
@@ -490,7 +490,7 @@ button:hover,
 /* Optional: Auf dem Handy etwas niedriger */
 @media (max-width: 768px) {
     .fullwidth-image.hero-narrow img {
-        height: 250px;
+        height: 200px;
     }
 }
 
@@ -789,6 +789,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
