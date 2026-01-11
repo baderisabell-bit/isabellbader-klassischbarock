@@ -493,21 +493,26 @@ section.fullwidth-image.hero-narrow img {
   }
 }
 
-/* DESKTOP: Zentriert mit Rand links/rechts */
-section.fullwidth-image.flaches-bild,
-section.fullwidth-image.flaches-bild picture {
+/* DESKTOP: Weißer Hintergrund und Zentrierung */
+section.fullwidth-image.flaches-bild {
+    background-color: #ffffff !important; /* Hintergrund links/rechts weiß */
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 0 !important;
     margin: 0 !important;
     line-height: 0;
-   background-color: white;
+}
+
+section.fullwidth-image.flaches-bild picture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 section.fullwidth-image.flaches-bild picture img {
     width: 85% !important;   /* Rand auf Desktop */
-    max-width: 1000px !important; 
+    max-width: 800px !important; 
     height: auto !important;
     display: block;
     margin: 0 auto;
@@ -516,12 +521,13 @@ section.fullwidth-image.flaches-bild picture img {
 /* MOBIL: Volle Breite, kein Rand */
 @media (max-width: 768px) {
     section.fullwidth-image.flaches-bild picture img {
-        width: 100% !important;     /* Nutzt die volle Bildschirmbreite */
-        max-width: none !important;  /* Hebt die 800px Begrenzung auf */
+        width: 100% !important;
+        max-width: none !important;
     }
     
+    /* Hintergrund auf Mobil wieder neutralisieren, da Bild 100% füllt */
     section.fullwidth-image.flaches-bild {
-        padding: 0 !important;      /* Entfernt eventuelle Abstände der Section */
+        background-color: transparent !important;
     }
 }
 
@@ -821,6 +827,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
