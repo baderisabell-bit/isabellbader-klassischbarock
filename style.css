@@ -493,11 +493,36 @@ section.fullwidth-image.hero-narrow img {
   }
 }
 
-section.fullwidth-image.flaches-bild img {
-  height: 600px !important; /* Hier die gewünschte Höhe für alle einstellen */
-  object-fit: cover;        /* Verhindert Verzerrung */
-  object-position: center;  /* Richtet den Fokus auf die Mitte des Bildes */
-  width: 85% !important;
+/* DESKTOP: Zentriert mit Rand links/rechts */
+section.fullwidth-image.flaches-bild,
+section.fullwidth-image.flaches-bild picture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 0;
+   background-color: white;
+}
+
+section.fullwidth-image.flaches-bild picture img {
+    width: 85% !important;   /* Rand auf Desktop */
+    max-width: 800px !important; 
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+}
+
+/* MOBIL: Volle Breite, kein Rand */
+@media (max-width: 768px) {
+    section.fullwidth-image.flaches-bild picture img {
+        width: 100% !important;     /* Nutzt die volle Bildschirmbreite */
+        max-width: none !important;  /* Hebt die 800px Begrenzung auf */
+    }
+    
+    section.fullwidth-image.flaches-bild {
+        padding: 0 !important;      /* Entfernt eventuelle Abstände der Section */
+    }
 }
 
 
@@ -796,6 +821,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
