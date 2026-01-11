@@ -494,35 +494,46 @@ section.fullwidth-image.hero-narrow img {
 }
 
 /* Erhöhte Spezifität durch das Anhängen der Klasse direkt an den Tag */
-html body section.fullwidth-image.flaches-bild {
-    background-color: #ffffff !important; 
-    display: flex !important;
-    justify-content: center !important;
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
+/* DESKTOP-EINSTELLUNGEN (ab 769px Breite) */
+@media (min-width: 769px) {
+    section.fullwidth-image.flaches-bild {
+        background-color: #ffffff !important; /* Rand-Farbe Weiß */
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex !important;           /* Aktiviert Zentrierung */
+        justify-content: center !important;
+        line-height: 0;
+    }
 
-/* Wir erzwingen den Rand für das Bild im Picture-Tag */
-section.fullwidth-image.flaches-bild picture, 
-section.fullwidth-image.flaches-bild img {
-    display: block !important;
-    width: 85% !important;      /* Das erzeugt den Rand links/rechts */
-    max-width: 800px !important; /* Maximale Breite auf großen Bildschirmen */
-    margin-left: auto !important;
-    margin-right: auto !important;
-    height: auto !important;
-}
-
-/* MOBIL: Hier setzen wir alles wieder auf 100%, damit kein Rand da ist */
-@media (max-width: 768px) {
-    section.fullwidth-image.flaches-bild picture,
     section.fullwidth-image.flaches-bild img {
-        width: 100% !important;
-        max-width: 100% !important;
+        /* Rand erzeugen: Entweder über % oder eine feste maximale Breite */
+        width: 85% !important; 
+        max-width: 900px !important; 
+
+        /* Höhe festlegen */
+        height: 600px !important; 
+        
+        /* Bildqualität & Ausschnitt */
+        object-fit: cover !important; 
+        object-position: center !important;
+        
+        display: block !important;
+        margin: 0 auto !important;
     }
 }
 
+/* MOBIL-EINSTELLUNGEN (Handy) */
+@media (max-width: 768px) {
+    section.fullwidth-image.flaches-bild {
+        background-color: transparent !important;
+    }
+
+    section.fullwidth-image.flaches-bild img {
+        width: 100% !important;   /* Mobil kein Rand */
+        max-width: 100% !important;
+        height: auto !important;  /* Mobil Höhe proportional (besser bedienbar) */
+    }
+}
 /* =========================
    KONTAKTFORMULAR
    ========================= */
@@ -818,6 +829,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
