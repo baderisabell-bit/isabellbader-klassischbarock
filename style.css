@@ -481,7 +481,7 @@ button:hover,
 }
 
 section.fullwidth-image.hero-narrow img {
-  height: 400px !important; /* Hier die gewünschte Höhe für alle einstellen */
+  height: 450px !important; /* Hier die gewünschte Höhe für alle einstellen */
   object-fit: cover;        /* Verhindert Verzerrung */
   object-position: center;  /* Richtet den Fokus auf die Mitte des Bildes */
 }
@@ -787,6 +787,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
