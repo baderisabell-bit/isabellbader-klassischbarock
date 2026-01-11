@@ -493,44 +493,35 @@ section.fullwidth-image.hero-narrow img {
   }
 }
 
-/* DESKTOP: Weißer Hintergrund und Zentrierung */
-section.fullwidth-image.flaches-bild {
-    background-color: #ffffff !important; /* Hintergrund links/rechts weiß */
-    display: flex;
-    justify-content: center;
-    width: 100%;
+/* Erhöhte Spezifität durch das Anhängen der Klasse direkt an den Tag */
+html body section.fullwidth-image.flaches-bild {
+    background-color: #ffffff !important; 
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
-    line-height: 0;
 }
 
-section.fullwidth-image.flaches-bild picture {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-section.fullwidth-image.flaches-bild picture img {
-    width: 85% !important;   /* Rand auf Desktop */
-    max-width: 800px !important; 
+/* Wir erzwingen den Rand für das Bild im Picture-Tag */
+section.fullwidth-image.flaches-bild picture, 
+section.fullwidth-image.flaches-bild img {
+    display: block !important;
+    width: 85% !important;      /* Das erzeugt den Rand links/rechts */
+    max-width: 800px !important; /* Maximale Breite auf großen Bildschirmen */
+    margin-left: auto !important;
+    margin-right: auto !important;
     height: auto !important;
-    display: block;
-    margin: 0 auto;
 }
 
-/* MOBIL: Volle Breite, kein Rand */
+/* MOBIL: Hier setzen wir alles wieder auf 100%, damit kein Rand da ist */
 @media (max-width: 768px) {
-    section.fullwidth-image.flaches-bild picture img {
+    section.fullwidth-image.flaches-bild picture,
+    section.fullwidth-image.flaches-bild img {
         width: 100% !important;
-        max-width: none !important;
-    }
-    
-    /* Hintergrund auf Mobil wieder neutralisieren, da Bild 100% füllt */
-    section.fullwidth-image.flaches-bild {
-        background-color: transparent !important;
+        max-width: 100% !important;
     }
 }
-
 
 /* =========================
    KONTAKTFORMULAR
@@ -827,6 +818,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
