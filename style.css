@@ -492,23 +492,24 @@ section.fullwidth-image.hero-narrow img {
     height: 250px !important;
   }
 }
-
-section.fullwidth-image.flaches-bild {
-    padding: 0 !important;
-    margin: 0 !important;
-    line-height: 0;       /* Verhindert winzige Lücken unter dem Bild */
-    background: none;
+/* Die Section und das Picture-Tag flexibel machen */
+section.fullwidth-image.flaches-bild,
+section.fullwidth-image.flaches-bild picture {
     display: flex;
     justify-content: center;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 0;
 }
 
-/* Das Bild innerhalb der Section */
-section.fullwidth-image.flaches-bild img {
-    width: 85%;           /* Hier stellst du ein, wie viel Platz links/rechts ist */
-    max-width: 800px;    /* Maximale Breite, damit es nicht zu riesig wird */
-    height: auto !important;
-    margin: 0;
+/* Das Bild innerhalb von Picture ansprechen */
+section.fullwidth-image.flaches-bild picture img {
+    width: 85% !important;   /* Deine gewünschte Breite */
+    max-width: 800px !important; 
+    height: 600px !important;
     display: block;
+    margin: 0 auto;         /* Sicherungskopie für die Zentrierung */
 }
 
 /* =========================
@@ -806,6 +807,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
