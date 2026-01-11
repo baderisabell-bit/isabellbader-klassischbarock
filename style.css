@@ -815,20 +815,12 @@ section.fullwidth-image img {
 
 /* Mobile */
 @media (max-width: 768px) {
-  .fullwidth-mobile {
-    padding-left: 0;
-    padding-right: 0;
+  .section.angebot {
+    display: none !important;
   }
+}
 
-  .fullwidth-mobile > .container {
-    max-width: none;
-    width: 100%;
-    margin: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 
-} 
 
 
 
