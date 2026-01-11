@@ -505,7 +505,7 @@ section.fullwidth-image.flaches-bild {
 /* Das Bild innerhalb der Section */
 section.fullwidth-image.flaches-bild img {
     width: 85%;           /* Hier stellst du ein, wie viel Platz links/rechts ist */
-    max-width: 1000px;    /* Maximale Breite, damit es nicht zu riesig wird */
+    max-width: 800px;    /* Maximale Breite, damit es nicht zu riesig wird */
     height: auto !important;
     margin: 0;
     display: block;
@@ -806,6 +806,7 @@ section.fullwidth-image img {
   }
 
 } 
+
 
 
 
