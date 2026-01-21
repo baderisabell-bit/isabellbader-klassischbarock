@@ -357,34 +357,6 @@ button:hover,
   background-color: #f6f3ef;
 }
 
-.ig-link {
-  color: #E1306C; /* Instagram-Markenfarbe */
-  text-decoration: none;
-  font-weight: bold;
-  transition: opacity 0.3s;
-}
-
-.ig-link:hover {
-  opacity: 0.7;
-} 
-
-.insta-icon {
-  color: #555; /* Standardfarbe (Grau) */
-  transition: color 0.3s ease;
-  text-decoration: none;
-}
-
-.insta-icon:hover {
-  /* Instagram Farbverlauf oder Markenfarbe */
-  color: #E1306C; 
-}
-
-/* Optional: Das Logo größer machen */
-.insta-icon svg {
-  width: 30px;
-  height: 30px;
-}
-
 /* =========================
    TESTIMONIALS
    ========================= */
@@ -847,6 +819,7 @@ section.fullwidth-image img {
     display: none !important;
   }
 }
+
 
 
 
