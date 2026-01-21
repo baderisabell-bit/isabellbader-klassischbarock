@@ -455,6 +455,29 @@ button:hover,
   z-index: 2;
 }
 
+#news-section {
+  position: relative;
+  background-image: url("images/anderes-pferd.jpg"); /* Hier dein neues Bild */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem 1.5rem; 
+}
+
+/* Auch das Overlay musst du für die neue ID wiederholen */
+#news-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+
+#news-section .container {
+  position: relative;
+  z-index: 2;
+}
+
 .fullwidth-image img {
   width: 100%;       /* Bild immer so breit wie der Container / Bildschirm */
   height:fit-content;      /* Höhe proportional */
@@ -819,6 +842,7 @@ section.fullwidth-image img {
     display: none !important;
   }
 }
+
 
 
 
