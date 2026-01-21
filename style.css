@@ -457,7 +457,7 @@ button:hover,
 
 #news-section {
   position: relative;
-  background-image: url("images/anderes-pferd.jpg"); /* Hier dein neues Bild */
+  background-image: url("images/kleine.jpg"); /* Hier dein neues Bild */
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -842,6 +842,7 @@ section.fullwidth-image img {
     display: none !important;
   }
 }
+
 
 
 
