@@ -357,6 +357,17 @@ button:hover,
   background-color: #f6f3ef;
 }
 
+.ig-link {
+  color: #E1306C; /* Instagram-Markenfarbe */
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.ig-link:hover {
+  opacity: 0.7;
+} 
+
 /* =========================
    TESTIMONIALS
    ========================= */
@@ -819,6 +830,7 @@ section.fullwidth-image img {
     display: none !important;
   }
 }
+
 
 
 
