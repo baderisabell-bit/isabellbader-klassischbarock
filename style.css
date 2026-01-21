@@ -797,7 +797,6 @@ section.fullwidth-image img {
   background-color: white;
   border-radius: 12px; /* Gesamtcontainer rund */
   position: relative;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* optional, nur außen */
 }
 
 /* Wrapper */
@@ -842,6 +841,7 @@ section.fullwidth-image img {
     display: none !important;
   }
 }
+
 
 
 
