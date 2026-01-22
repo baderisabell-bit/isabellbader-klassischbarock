@@ -449,6 +449,12 @@ button:hover,
   background-color: rgba(255, 255, 255, 0.7);
   z-index: 1;
 }
+/* Mobile */
+@media (max-width: 768px) {
+  #uebermich {
+    display: none !important;
+  }
+}
 
 #uebermich .container {
   position: relative;
@@ -832,6 +838,13 @@ section.fullwidth-image img {
   text-decoration: none;
   text-align: center;
   color: black;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .section.angebot {
+    display: none !important;
+  }
 }
 
 
