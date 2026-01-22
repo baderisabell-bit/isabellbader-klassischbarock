@@ -449,12 +449,6 @@ button:hover,
   background-color: rgba(255, 255, 255, 0.7);
   z-index: 1;
 }
-/* Mobile */
-@media (max-width: 768px) {
-  #uebermich {
-    display: none !important;
-  }
-}
 
 #uebermich .container {
   position: relative;
@@ -482,6 +476,17 @@ button:hover,
 #news-section .container {
   position: relative;
   z-index: 2;
+}
+/* Media Query für mobile Geräte (max. 768px Breite) */
+@media (max-width: 768px) {
+  #news-section {
+    background-image: none; /* Entfernt das Hintergrundbild */
+    background-color: #ffffff; /* Optional: Eine Fallback-Farbe setzen */
+  }
+
+  #news-section::before {
+    display: none; /* Entfernt das Overlay, da kein Bild mehr da ist */
+  }
 }
 
 .fullwidth-image img {
@@ -846,6 +851,7 @@ section.fullwidth-image img {
     display: none !important;
   }
 }
+
 
 
 
