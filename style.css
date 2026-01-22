@@ -835,12 +835,7 @@ section.fullwidth-image img {
 }
 
 
-/* Mobile */
-@media (max-width: 768px) {
-  .section.angebot {
-    display: none !important;
-  }
-}
+
 
 
 
