@@ -692,34 +692,36 @@ button.btn:hover {
 }
 
 /* =========================
-   BILDER NEBEN DEM TEXT
-========================= */
+   BILDER NEBEN DEM TEXT (Repariert)
+   ========================= */
 
 .content-block {
   width: 100%;
-  background-color: white;   /* weißer Hintergrund */
-  padding: 60px 0;           /* Abstand oben/unten */
-  display: flex;
+  background-color: white;   
+  padding: 60px 0;           
+  display: flex;             /* Aktiviert das Nebeneinander-Layout */
   justify-content: center; 
+  align-items: center;       /* Zentriert Text und Bild vertikal zueinander */
   margin-bottom: 60px;  
 }
 
-/* Innerer Inhalt: max-width & Padding */
-.content-block > .text,
-.content-block > .image {
-  flex: 1 1 auto;             /* flexibel nebeneinander */
-  max-width: 550px;            /* optional, falls du Breite begrenzen willst */
-  padding: 0 20px;             /* horizontaler Abstand innerhalb */
+/* Die beiden inneren Spalten */
+.content-block .text,
+.content-block .image {
+  flex: 1;                   /* Gibt beiden Spalten exakt 50% Breite */
+  max-width: 550px;          
+  padding: 0 20px;             
 }
 
-/* Bilder */
+/* Das Bild selbst zwingen, den Platz einzunehmen */
 .content-block .image img {
-  width: 100%;
-  height: auto;
+  width: 100%;               /* Nutzt die vollen 50% des Platzes aus */
+  height: auto;              /* Behält das richtige Seitenverhältnis */
   display: block;
+  object-fit: cover;         /* Sorgt dafür, dass WebP-Bilder nicht verzerrt werden */
 }
 
-/* Links/rechts Layout */
+/* Links/rechts Layout via Flex-Direction */
 .text-left {
   flex-direction: row;
 }
@@ -727,29 +729,28 @@ button.btn:hover {
   flex-direction: row-reverse;
 }
 
-/* Mobile Ansicht */
+/* Mobile Ansicht (Handy) */
 @media (max-width: 768px) {
   .content-block {
-    flex-direction: column !important;
+    flex-direction: column !important; /* Untereinander auf dem Handy */
     text-align: center;
     padding: 40px 20px; 
   }
    
- .content-block .text {
+  .content-block .text {
     order: 1;
+    margin-bottom: 20px;
   }
    
   .content-block .image {
-  order: 2;
-  margin-top: 20px;
-}
+    order: 2;
+    width: 100%;             /* Auf dem Handy volle Breite */
+  }
 
-   .content-block .image img {
-    width: 100%;
-    height: auto;
+  .content-block .image img {
+    max-width: 100%;
   }
 }
-
 
 /* =========================
    FULLWIDTH IMAGE FIX
