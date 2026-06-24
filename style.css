@@ -269,7 +269,7 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-ul il {
+ul li {
   display: list-item;
   margin-bottom: 0.5rem;
 }
@@ -792,7 +792,7 @@ section.fullwidth-image img {
   height: auto;
 }
 
- * =========================
+ /* =========================
    ANGEBOT
 ========================= */
 
