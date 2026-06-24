@@ -430,7 +430,7 @@ button:hover,
 
 #uebermich {
   position: relative;
-  background-image: url("images/pferd.jpg");
+  background-image: url("image/pferdg.webp");
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
@@ -457,7 +457,7 @@ button:hover,
 
 #news-section {
   position: relative;
-  background-image: url("images/kleine.jpg"); /* Hier dein neues Bild */
+  background-image: url("image/kleineg.webp"); /* Hier dein neues Bild */
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
