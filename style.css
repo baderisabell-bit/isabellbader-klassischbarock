@@ -514,6 +514,8 @@ textarea {
   background-repeat: no-repeat;
   z-index: 1;
   padding: 8rem 0;
+  margin-bottom: 3rem !important; 
+  display: block !important;
 }
 
 /* Das transparente Overlay, das das Bild weichzeichnet/aufhellt */
