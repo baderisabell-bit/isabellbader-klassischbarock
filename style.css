@@ -261,6 +261,7 @@ nav.main-nav a:hover::after {
   text-transform: uppercase;
   font-size: 0.85rem;
   letter-spacing: 1px;
+  margin-bottom: 2rem;
   color: #7a6a58;
 }
 
@@ -512,6 +513,7 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
+  padding: 8rem 0;
 }
 
 /* Das transparente Overlay, das das Bild weichzeichnet/aufhellt */
