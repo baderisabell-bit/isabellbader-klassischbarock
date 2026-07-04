@@ -103,40 +103,41 @@ nav.main-nav a:hover::after {
 }
 
 /* ========================================================
-   4. MOBILES MENÜ (BURGER)
+   4. MOBILES MENÜ (BURGER) - REPARATUR
    ======================================================== */
-@media (max-width: 768px) {
-    /* Zeige den Burger-Button auf dem Handy an */
+@media (min-width: 769px) {
     .menu-toggle {
-        display: flex !important;
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex !important; /* Erzwingt die Anzeige */
         flex-direction: column;
         gap: 5px;
         background: none;
         border: none;
-        margin: 0 auto 1rem auto;
-        padding: 10px;
+        margin: 1rem auto;
+        cursor: pointer;
     }
     
     .menu-toggle span {
         width: 25px;
         height: 2px;
         background: #2b2b2b;
-        transition: 0.3s;
     }
 
-    /* Verstecke die Navigation standardmäßig auf dem Handy */
     nav.main-nav {
-        display: none;
+        display: none; /* Standardmäßig ausblenden */
         flex-direction: column;
-        gap: 1rem;
+        width: 100%;
         background: #ffffff;
         padding: 1rem;
-        border-bottom: 1px solid #e8e4de;
     }
 
-    /* Diese Klasse wird per JavaScript hinzugefügt */
     nav.main-nav.active {
-        display: flex;
+        display: flex !important; /* Wird per JS gesetzt */
     }
 }
 
@@ -1468,4 +1469,14 @@ textarea {
 
 .contact-list li {
     margin-bottom: 0.3rem;
+}
+
+/* Bild-Fix für alle Bilder, damit sie nicht ausbrechen */
+@media (max-width: 768px) {
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block;
+    }
 }
