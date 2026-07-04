@@ -8,38 +8,82 @@
     <title>Klassisch-barocke Dressur München - Isabell Bader</title>
 
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"> </script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <!--HEADER-->
 <header class="header">
-        <h1>Klassisch-barocke Dressur München - Isabell Bader</h1>
-        <nav>
-            <a href="index.html">Startseite</a>
-            <a href="ueber.html">Über Mich</a>
-            <a href="reitunterrichtundberitt.html">Reitunterricht und Beritt</a>
-            <a href="lehrgaenge.html">Lehrgänge</a>
-        </nav>
+    <h1>Klassisch-barocke Dressur München - Isabell Bader</h1>
+    
+    <button class="menu-toggle" aria-label="Menü öffnen" style="display: none;">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="main-nav">
+        <a href="index.html">Startseite</a>
+        <a href="ueber.html">Über Mich</a>
+        <a href="reitunterrichtundberitt.html">Reitunterricht und Beritt</a>
+    </nav>
 </header>
 
-<section class="fullwidth-image hero-narrow">
-  <img src="image/rjg.webp" alt="Longieren">
+<!-- HERO BILD (Jungpferde) -->
+<section class="hero-parallax-section">
+  <div class="parallax-bg-jungpferde"></div>
+  <div class="hero-overlay"></div>
+  
+  <div class="hero-content">
+    <h2 class="hero-title">Schwerpunkt Jungpferdeausbildung</h2>
+    <p class="hero-subtitle">„Sanft, individuell und pferdegerecht – die Basis für nachhaltigen Erfolg.“</p>
+  </div>
 </section>
     
-<!--Jungpferdeausbildung-->
-<section id="jungpferdeausbildung" class="section desktop-paragraphs">
-    <div class="new">
-       <h2> Schwerpunkt Jungpferdeausbildung </h2>
-       <p> Ich begleite junge Pferde behutsam nach der klassisch-barocken Reitweise, um Vertrauen, Losgelassenheit und feine Einwirkung aufzubauen. Besonders Pferde, die unsicher sind oder schlechte Erfahrungen gemacht haben, profitieren von einem ruhigen, konsequenten und einfühlsamen Training, das ihre Persönlichkeit respektiert und gleichzeitig ihre natürlichen Fähigkeiten fördert. Ein zentraler Bestandteil meiner Arbeit ist die Geraderichtung, die die Balance, Symmetrie und Versammlung des Pferdes unterstützt. Durch gezielte Übungen achte ich darauf, dass das Pferd körperlich gleichmäßig belastet wird, seine Muskulatur harmonisch aufbaut und seine Bewegungsabläufe ökonomisch und gesund gestalten kann. </p>
-       <p> Der Anspruch an das Pferd wird immer individuell angepasst: Jedes Tier hat sein eigenes Lerntempo und unterschiedliche Bedürfnisse. Mein Unterricht und Beritt berücksichtigen dies durch schrittweise Steigerung der Anforderungen, sodass das Pferd Selbstvertrauen entwickelt, ohne überfordert zu werden. Dabei werden Fortschritte gezielt gefördert und Rückschläge als natürliche Lernschritte genutzt. </p>
-       <p> Ich arbeite mit vielfältigen Methoden: Handarbeit, Cavaletti, Doppellonge und Bodenarbeit bilden die Basis für eine ganzheitliche Entwicklung von Pferd und Reiter. Die klassischen Lektionen der barocken Reitweise werden behutsam eingeführt, sodass das Pferd körperlich und geistig sicher geführt wird. </p>
-       <p> Ich arbeite mit vielfältigen Methoden: Handarbeit, Cavaletti, Doppellonge und Bodenarbeit bilden die Basis für eine ganzheitliche Entwicklung von Pferd und Reiter. Die klassischen Lektionen der barocken Reitweise werden behutsam eingeführt, sodass das Pferd körperlich und geistig sicher geführt wird. </p>
-       <p> Dieser sanfte, individuelle und pferdegerechte Ansatz schafft die Grundlage für nachhaltigen Erfolg – egal, ob es um die Ausbildung eines Jungpferdes, das Nacharbeiten von Unsicherheiten oder die Vorbereitung auf Alltag, spezielle Lektionen oder Turnierambitionen geht. Mein Unterricht legt dabei besonderen Wert auf Respekt, Geduld, Freude am Lernen und die Entwicklung einer vertrauensvollen Beziehung zwischen Mensch und Pferd. </p>
-       <p> Bei Interesse freue ich mich über eine kurze Nachricht mit deiner Situation und deinem Ziel. </p>
+<!-- CONTENT -->
+<section id="jungpferdeausbildung" class="content-section-clean">
+    <div class="content-container">
+        
+        <div class="text-block-main">
+            <p class="intro-paragraph">
+                Ich begleite junge Pferde behutsam nach der klassisch-barocken Reitweise, um Vertrauen, Losgelassenheit und feine Einwirkung aufzubauen.
+            </p>
+            
+            <p>
+                Besonders Pferde, die unsicher sind oder schlechte Erfahrungen gemacht haben, profitieren von einem ruhigen, konsequenten und einfühlsamen Training, das ihre Persönlichkeit respektiert und gleichzeitig ihre natürlichen Fähigkeiten fördert. Ein zentraler Bestandteil meiner Arbeit ist die Geraderichtung, die die Balance, Symmetrie und Versammlung des Pferdes unterstützt.
+            </p>
+
+            <!-- ZUSATZBILD: Wiederholung für das Design -->
+            <div class="embedded-image-wrap">
+                <img src="images/rjg.webp" alt="Jungpferdeausbildung" class="embedded-img">
+            </div>
+            
+            <p>
+                Der Anspruch an das Pferd wird immer individuell angepasst: Jedes Tier hat sein eigenes Lerntempo und unterschiedliche Bedürfnisse. Mein Unterricht und Beritt berücksichtigen dies durch schrittweise Steigerung der Anforderungen, sodass das Pferd Selbstvertrauen entwickelt, ohne überfordert zu werden.
+            </p>
+            
+            <p>
+                Ich arbeite mit vielfältigen Methoden: Handarbeit, Cavaletti, Doppellonge und Bodenarbeit bilden die Basis für eine ganzheitliche Entwicklung. Die klassischen Lektionen der barocken Reitweise werden behutsam eingeführt, sodass das Pferd körperlich und geistig sicher geführt wird.
+            </p>
+            
+            <p class="last-text-paragraph">
+                Dieser sanfte, individuelle und pferdegerechte Ansatz schafft die Grundlage für nachhaltigen Erfolg. Mein Unterricht legt dabei besonderen Wert auf Respekt, Geduld und die Entwicklung einer vertrauensvollen Beziehung zwischen Mensch und Pferd.
+            </p>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- OUTRO / CTA -->
+        <div class="outro-wrapper">
+            <p class="outro-text">
+                Bei Interesse freue ich mich über eine kurze Nachricht mit deiner Situation und deinem Ziel.
+            </p>
+            <a href="#kontakt" class="btn btn-cta">Nachricht senden</a>
+        </div>
+
     </div>
-  </section>
+</section>
 
   <!-- KONTAKT -->
   <section id="kontakt" class="contact-section">

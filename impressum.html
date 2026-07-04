@@ -8,90 +8,65 @@
     <title>Klassisch-barocke Dressur München - Isabell Bader</title>
 
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"> </script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <!--HEADER-->
 <header class="header">
-        <h1>Klassisch-barocke Dressur München - Isabell Bader</h1>
-        <nav>
-            <a href="index.html">Startseite</a>
-            <a href="ueber.html">Über Mich</a>
-            <a href="reitunterrichtundberitt.html">Reitunterricht und Beritt</a>
-            <a href="lehrgaenge.html">Lehrgänge</a>
-        </nav>
+    <h1>Klassisch-barocke Dressur München - Isabell Bader</h1>
+    
+    <!-- Das Hamburger-Menü blendet sich jetzt standardmäßig aus, falls es nicht gebraucht wird -->
+    <button class="menu-toggle" aria-label="Menü öffnen" style="display: none;">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="main-nav">
+        <a href="index.html">Startseite</a>
+        <a href="ueber.html">Über Mich</a>
+        <a href="reitunterrichtundberitt.html">Reitunterricht und Beritt</a>
+    </nav>
 </header>
 
-<!--Impressum-->
- <section id="impressum" class="section">
-    <div class="rechtliches">
-       <h1> Impressum </h1>
-       <p> Angaben gemäß § 5 TMG </p>
+<section id="impressum" class="content-section-clean">
+    <div class="content-container text-block-main">
+        <h1>Impressum</h1>
+        <p class="intro-paragraph">Angaben gemäß § 5 TMG</p>
 
-        <p> Klassisch-barocke Dressur München - Isabell Bader </p>
-        <p>Isabell Bader </p>
-        <ul>
-            <li>Innerkoflerstraße 40, 81377 München</li>
-            <li>+49 (0) 15117903181</li>
-            <li>baderisabell@gmail.com</li>
-            <li>www.klassischbarocke-dressur.de</li>
-        </ul>
+        <div class="rechtliches-content">
+            <p><strong>Klassisch-barocke Dressur München - Isabell Bader</strong><br>
+            Isabell Bader<br>
+            Innerkoflerstraße 40<br>
+            81377 München</p>
 
-        <p> Rechtsform: Kleingewerbe/Einzelunternehmen </p>
+            <ul class="contact-list">
+                <li>Telefon: +49 (0) 151 17903181</li>
+                <li>E-Mail: baderisabell@gmail.com</li>
+                <li>Website: <a href="http://www.klassischbarocke-dressur.de">www.klassischbarocke-dressur.de</a></li>
+            </ul>
 
-        <p> Umsatzsteuer:  Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmenregelung) </p>
+            <h2>Unternehmensdaten</h2>
+            <p><strong>Rechtsform:</strong> Kleingewerbe / Einzelunternehmen<br>
+            <strong>Umsatzsteuer:</strong> Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung).<br>
+            <strong>Berufsbezeichnung:</strong> Reitlehrerin / Bereiterin mit Trainer C - klassisch-barocke Reiterei</p>
 
-        <p> Berufsbezeichnung: Reitlehrerin/Bereiterin mit Traniner C - klassisch-barocke Reiterei </p>
+            <h2>Haftungsausschluss</h2>
+            <p>Die Inhalte meiner Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen.</p>
 
-        <p> Haftungsausschluss: Die Inhalte meiner Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen. </p>
-
-        <p> Bildnachweise: </p>
-        <ul>
-            <li>Private Aufnahmen </li>
-            <li>Foto: © Christina Meyer </li>
-        </ul>
+            <h2>Bildnachweise</h2>
+            <ul>
+                <li>Private Aufnahmen</li>
+                <li>Foto: © Christina Meyer</li>
+            </ul>
+        </div>
     </div>
-  </section>
-
-  <!-- KONTAKT -->
-  <section id="kontakt" class="contact-section">
-    <div class="contact-box">
-      <h2>Kontakt</h2>
-      <p>Schreib mir gerne für ein Kennenlernen.</p>
-
-      <form id="contactForm" action="https://formspree.io/f/mpqwwgkd" method="POST">
-        
-        <!-- Vorname + Nachname -->
-        <div class="form-row">
-          <input type="text" name="vorname" placeholder="Vorname" required>
-          <input type="text" name="nachname" placeholder="Nachname" required>
-        </div>
-
-        <!-- E-Mail + Betreff -->
-        <div class="form-row">
-          <input type="email" name="email" placeholder="E-Mail" required>
-          <input type="text" name="betreff" placeholder="Betreff" required>
-        </div>
-
-        <!-- Nachricht -->
-        <textarea name="nachricht" placeholder="Deine Nachricht" required></textarea>
-
-        <!-- Senden Button -->
-        <div class="button-wrapper">
-          <button type="submit" class="btn">Senden</button>
-        </div>
-
-      </form>
-
-      <!-- Danke Nachricht -->
-      <p id="dankeText" class="thank-you">Danke für deine Nachricht!</p>
-    </div>
-  </section>
+</section>
 
   <!-- FOOTER -->
-  <footer class="footer"><
+  <footer class="footer">
     <div class="container footer-grid">
 
     <!-- NAVIGATION -->
@@ -126,6 +101,5 @@
 </body>
 
 </html>
-
 
 

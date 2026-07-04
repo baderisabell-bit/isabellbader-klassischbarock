@@ -8,29 +8,38 @@
     <title>Klassisch-barocke Dressur München - Isabell Bader</title>
 
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"> </script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <!--HEADER-->
 <header class="header">
-        <h1>Klassisch-barocke Dressur München - Isabell Bader</h1>
-        <nav>
-            <a href="index.html">Startseite</a>
-            <a href="ueber.html">Über Mich</a>
-            <a href="reitunterrichtundberitt.html">Reitunterricht und Beritt</a>
-            <a href="lehrgaenge.html">Lehrgänge</a>
-        </nav>
+    <h1>Klassisch-barocke Dressur München - Isabell Bader</h1>
+    
+    <!-- Das Hamburger-Menü blendet sich jetzt standardmäßig aus, falls es nicht gebraucht wird -->
+    <button class="menu-toggle" aria-label="Menü öffnen" style="display: none;">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="main-nav">
+        <a href="index.html">Startseite</a>
+        <a href="ueber.html">Über Mich</a>
+        <a href="reitunterrichtundberitt.html">Reitunterricht und Beritt</a>
+    </nav>
 </header>
 
-<section class="fullwidth-image">
-  <img src="image/pferdg.webp" alt="Mein Pferd und Ich">
+<!-- HERO BILD (angepasst an Startseite) -->
+<section class="hero-parallax-section">
+  <div class="parallax-bg-ueber"></div> <!-- Hier das entsprechende Bild hinterlegen -->
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+  </div>
 </section>
 
-
-<!--Über Mich-->
- <section id="ueber" class="section">
+<section id="ueber" class="section">
     <div class="section-content">
        <h1> Über Mich - Isabell Bader </h1>
        <p> Pferde begleiten mich, seit ich ein Kind bin. Das Reiten war für mich nie nur ein Hobby, sondern immer eine Möglichkeit, Beziehung, Bewegung und Kommunikation zu erleben. Mit den Jahren und unterschiedlichen Pferden wuchs mein Wunsch, nicht nur „zu reiten“, sondern wirklich zu verstehen, wie ein sinnvolles Training funktioniert – oder eben nicht. </p>
@@ -40,18 +49,16 @@
        <p> Seit 2024 studiere ich Pädagogik, was meine Arbeit als Reitlehrerin optimal ergänzt. Das Studium hilft mir vor allem individuell auf Unsicherheiten und Ängste der Reiter einzugehen und Inhalte verständlich zu vermitteln. Besonders wichtig ist mir dabei ein ruhiger Rahmen, in dem Lernen ohne Druck möglich ist. </p>
        <p> In meiner Arbeit verbinde ich Erfahrung, klassische Ausbildungsgrundsätze und pädagogisches Verständnis. Ich möchte Pferd und Reiter dort abholen, wo sie stehen, Zusammenhänge erklären und einen Weg aufzeigen, der nachvollziehbar, fair und realistisch ist – meine Arbeit ist besonders geeignet für Pferde mit individuellen Herausforderungen wie Ataxie, Freizeitpferde oder Turnierpferde. </p>
     </div>
-  </section>
+</section>
 
-<!--Steinbrecht-->
-  <section id="steinbrecht" class="section">
+<section id="steinbrecht" class="section-dark-soft">
     <div class="section-content">
-    <h3> „Alle Reitkunst beruht auf der Harmonie zwischen Reiter und Pferd.“ </h3>
-    <h3> – Gustav Steinbrecht </h3>
-</div>
-  </section>
+        <h3>„Alle Reitkunst beruht auf der Harmonie zwischen Reiter und Pferd.“</h3>
+        <p>– Gustav Steinbrecht</p>
+    </div>
+</section>
 
-<!--Meine Philosophie-->
- <section id="philosphie" class="section">
+<section id="philosphie" class="section">
     <div class="section-content">
        <h1> Meine Philosophie </h1>
        <p> Meine Arbeit basiert auf den Grundsätzen der klassischen Reitlehre und der klassisch-barocken Ausbildung. Im Mittelpunkt stehen Verständnis, Klarheit und systematischer Aufbau für Pferd und Reiter. Ich gehe davon aus, dass Probleme in der Ausbildung selten aus Unwillen entstehen, sondern meist aus Unklarheit, fehlender Balance oder körperlicher Überforderung. </p>
@@ -71,9 +78,9 @@
        <p> Ein fester Bestandteil meiner Arbeit ist neben der Dressurausbildung, die Bodenarbeit – Handarbeit, Arbeit am langen Zügel. Sie ermöglicht es, Bewegungsabläufe objektiv zu betrachten, Hilfen sauber aufzubauen und Probleme ohne Reitergewicht zu analysieren und zu lösen. Bodenarbeit ist für mich kein Ersatz für das Reiten, sondern ein wichtiges ergänzendes Werkzeug innerhalb der Ausbildung. </p>
        <p> Meine Unterrichtsphilosophie unterscheidet sich dabei bewusst von Ansätzen, bei denen Lektionen schneller erreicht werden sollen als die körperlichen Voraussetzungen es erlauben, die Probleme hauptsächlich durch stärkere Hilfen oder Hilfsmittel gelöst werden und die äußere Form über innere Losgelassenheit gestellt wird. Ich arbeite nicht leistungs- oder ergebnisorientiert im Sinne von „möglichst schnell“, sondern ausbildungsorientiert. Auch Reiter mit Turnierambitionen sind willkommen, sofern eine korrekte, gesunderhaltende Basis im Vordergrund stehen kann. Meine Arbeit richtet sich an Reiter, die klassische Grundsätze schätzen, bereit sind, an Ursachen statt Symptomen zu arbeiten und eine ruhige, nachvollziehbare Ausbildung für ihr Pferd suchen.</p>
     </div>
-  </section>
+</section>
 
-  <!-- KONTAKT -->
+
   <section id="kontakt" class="contact-section">
     <div class="contact-box">
       <h2>Kontakt</h2>

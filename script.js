@@ -1,29 +1,37 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const testimonials = document.querySelectorAll(".testimonial");
-  let current = 0;
+let currentIdx = 1; // Startet beim zweiten (Klasse 'active' im HTML)
 
-  function showTestimonial(index) {
-    testimonials.forEach(t => t.classList.remove("active"));
-    testimonials[index].classList.add("active");
-  }
+function showTestimonial(index) {
+    const testimonials = document.querySelectorAll('.testimonial');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (index >= testimonials.length) currentIdx = 0;
+    if (index < 0) currentIdx = testimonials.length - 1;
+    
+    // Alle ausblenden und Punkte deaktivieren
+    testimonials.forEach(t => t.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+    
+    // Aktuelles anzeigen und Punkt aktivieren
+    testimonials[currentIdx].classList.add('active');
+    if (dots[currentIdx]) {
+        dots[currentIdx].classList.add('active');
+    }
+}
 
-  // 🔑 GLOBAL verfügbar machen
-  window.nextTestimonial = function () {
-    current = (current + 1) % testimonials.length;
-    showTestimonial(current);
-  };
+function nextTestimonial() {
+    currentIdx++;
+    showTestimonial(currentIdx);
+}
 
-  window.prevTestimonial = function () {
-    current = (current - 1 + testimonials.length) % testimonials.length;
-    showTestimonial(current);
-  };
+function prevTestimonial() {
+    currentIdx--;
+    showTestimonial(currentIdx);
+}
 
-  // erstes Testimonial anzeigen
-  if (testimonials.length > 0) {
-    showTestimonial(current);
-  }
-});
-
+function currentTestimonial(index) {
+    currentIdx = index;
+    showTestimonial(currentIdx);
+}
 
 
 

@@ -8,79 +8,113 @@
     <title>Klassisch-barocke Dressur München - Isabell Bader</title>
 
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"> </script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <!--HEADER-->
 <header class="header">
-        <h1>Klassisch-barocke Dressur München - Isabell Bader</h1>
-        <nav>
-            <a href="index.html">Startseite</a>
-            <a href="ueber.html">Über Mich</a>
-            <a href="reitunterrichtundberitt.html">Reitunterricht und Beritt</a>
-            <a href="lehrgaenge.html">Lehrgänge</a>
-        </nav>
+    <h1>Klassisch-barocke Dressur München - Isabell Bader</h1>
+    
+    <button class="menu-toggle" aria-label="Menü öffnen" style="display: none;">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="main-nav">
+        <a href="index.html">Startseite</a>
+        <a href="ueber.html">Über Mich</a>
+        <a href="reitunterrichtundberitt.html">Reitunterricht und Beritt</a>
+    </nav>
 </header>
 
-<section class="fullwidth-image hero-narrow">
-  <img src="image/rwg.webp" alt="Reitunterricht Wiedereinsteiger">
+<!-- HERO BILD MIT INTRO TEXT -->
+<section class="hero-parallax-section">
+  <div class="parallax-bg"></div>
+  <div class="hero-overlay"></div>
+  
+  <div class="hero-content">
+    <h2 class="hero-title">Schwerpunkt – Angst beim Reiten und Wiedereinsteiger</h2>
+    <p class="hero-subtitle">„Sicherheit Schritt für Schritt wiederfinden – technisch, mental und körperlich.“</p>
+  </div>
 </section>
     
-<!--Angstreiter-->
- <section id="angstreiter" class="section desktop-paragraphs">
-    <div class="new">
-       <h2> Schwerpunkt - Angst beim Reiten und Wiedereinsteiger </h2>
-       <p> Ich biete Reitunterricht für Angstreiter und Wiedereinsteiger, die wieder Sicherheit im Umgang und im Sattel gewinnen möchten – in einem ruhigen, klaren und strukturierten Rahmen. </p>
-       <p> Sind dir Themen wie Unsicherheit oder Angst nach einem Sturz, längere Reitpause und das Gefühl „nicht mehr reinzufinden“, fehlendes Vertrauen in das eigene Können oder in das Pferd, Anspannung beim Aufsteigen, Anreiten oder in bestimmten Situationen oder auch das Gefühl, die Kontrolle zu verlieren, obwohl das Pferd eigentlich „brav“ ist, bekannt? – Wenn ja, bist du hier genau richtig. </p>
-       <p> Mein Angebot richtet sich an Reiter, die wieder Vertrauen in sich und ihr Pferd aufbauen möchten, ohne Leistungsdruck lernen wollen und Wert auf eine pferdegerechte, verständliche Ausbildung legen. Somit ist der Unterricht darauf ausgerichtet, Sicherheit Schritt für Schritt aufzubauen – technisch, mental und körperlich. Das Tempo wird an den jeweiligen Reiter angepasst, ohne Druck oder feste Erwartungen. </p>
-       <p> Ich arbeite klassisch-barock orientiert und lege Wert auf eine klare, verständliche Hilfengebung, ruhige, nachvollziehbare Abläufe, saubere Grundlagen und realistische Ziele. </p>
-       <p> Der Unterricht ist sowohl für Wiedereinsteiger als auch für Reiter geeignet, die aktuell nicht allein weiterkommen und sich eine ruhige Begleitung wünschen. </p>
-       <p> Bei Interesse freue ich mich über eine kurze Nachricht mit deiner Situation und deinem Ziel. </p>       
-    </div>
-  </section>
+<!-- ANGSTREITER CONTENT -->
+<section id="angstreiter" class="content-section-clean">
+    <div class="content-container">
+        
+        <div class="text-block-main">
+            <p class="intro-paragraph">
+                Ich biete Reitunterricht für Angstreiter und Wiedereinsteiger, die wieder Sicherheit im Umgang und im Sattel gewinnen möchten – in einem ruhigen, klaren und strukturierten Rahmen.
+            </p>
+            
+            <p>
+                Sind dir Themen wie Unsicherheit oder Angst nach einem Sturz, eine längere Reitpause und das Gefühl „nicht mehr reinzufinden“, fehlendes Vertrauen in das eigene Können oder in das Pferd, Anspannung beim Aufsteigen, Anreiten oder in bestimmten Situationen oder auch das Gefühl, die Kontrolle zu verlieren, obwohl das Pferd eigentlich „brav“ ist, bekannt? – Wenn ja, bist du hier genau richtig.
+            </p>
 
-  <!-- KONTAKT -->
-  <section id="kontakt" class="contact-section">
+            <!-- INTEGRIERTES FORMATIERTES ZUSATZBILD -->
+            <div class="embedded-image-wrap">
+                <img src="images/rwg.webp" alt="Reitunterricht Wiedereinsteiger" class="embedded-img">
+            </div>
+            
+            <p>
+                Mein Angebot richtet sich an Reiter, die wieder Vertrauen in sich und ihr Pferd aufbauen möchten, ohne Leistungsdruck lernen wollen und Wert auf eine pferdegerechte, verständliche Ausbildung legen. Somit ist der Unterricht darauf ausgerichtet, Sicherheit Schritt für Schritt aufzubauen – technisch, mental und körperlich. Das Tempo wird an den jeweiligen Reiter angepasst, ohne Druck oder feste Erwartungen.
+            </p>
+            
+            <p class="last-text-paragraph">
+                Ich arbeite klassisch-barock orientiert und lege Wert auf eine klare, verständliche Hilfengebung, ruhige, nachvollziehbare Abläufe, saubere Grundlagen und realistische Ziele. Der Unterricht ist sowohl für Wiedereinsteiger als auch für Reiter geeignet, die aktuell nicht allein weiterkommen und sich eine ruhige Begleitung wünschen.
+            </p>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- OUTRO / CALL TO ACTION -->
+        <div class="outro-wrapper">
+            <p class="outro-text">
+                Bei Interesse freue ich mich über eine kurze Nachricht mit deiner Situation und deinem Ziel.
+            </p>
+            <a href="#kontakt" class="btn btn-cta">Nachricht senden</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="contact-section">
     <div class="contact-box">
       <h2>Kontakt</h2>
       <p>Schreib mir gerne für ein Kennenlernen.</p>
 
       <form id="contactForm" action="https://formspree.io/f/mpqwwgkd" method="POST">
         
-        <!-- Vorname + Nachname -->
         <div class="form-row">
           <input type="text" name="vorname" placeholder="Vorname" required>
           <input type="text" name="nachname" placeholder="Nachname" required>
         </div>
 
-        <!-- E-Mail + Betreff -->
         <div class="form-row">
           <input type="email" name="email" placeholder="E-Mail" required>
           <input type="text" name="betreff" placeholder="Betreff" required>
         </div>
 
-        <!-- Nachricht -->
         <textarea name="nachricht" placeholder="Deine Nachricht" required></textarea>
 
-        <!-- Senden Button -->
         <div class="button-wrapper">
           <button type="submit" class="btn">Senden</button>
         </div>
 
       </form>
 
-      <!-- Danke Nachricht -->
       <p id="dankeText" class="thank-you">Danke für deine Nachricht!</p>
     </div>
-  </section>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+<!-- FOOTER -->
+<footer class="footer">
     <div class="container footer-grid">
 
-    <!-- NAVIGATION -->
     <div class="footer-block">
       <h3>Navigation</h3>
       <ul>
@@ -91,7 +125,6 @@
       </ul>
     </div>
 
-    <!-- RECHTLICH -->
     <div class="footer-block">
       <h3>Rechtliches</h3>
       <ul>
@@ -110,12 +143,4 @@
 </footer>
 
 </body>
-
 </html>
-
-
-
-
-
-
-
