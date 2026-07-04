@@ -96,6 +96,50 @@ nav.main-nav a:hover::after {
   width: 100%;
 }
 
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none !important;
+    }
+}
+
+/* ========================================================
+   4. MOBILES MENÜ (BURGER)
+   ======================================================== */
+@media (max-width: 768px) {
+    /* Zeige den Burger-Button auf dem Handy an */
+    .menu-toggle {
+        display: flex !important;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        margin: 0 auto 1rem auto;
+        padding: 10px;
+    }
+    
+    .menu-toggle span {
+        width: 25px;
+        height: 2px;
+        background: #2b2b2b;
+        transition: 0.3s;
+    }
+
+    /* Verstecke die Navigation standardmäßig auf dem Handy */
+    nav.main-nav {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        background: #ffffff;
+        padding: 1rem;
+        border-bottom: 1px solid #e8e4de;
+    }
+
+    /* Diese Klasse wird per JavaScript hinzugefügt */
+    nav.main-nav.active {
+        display: flex;
+    }
+}
+
 /* ========================================================
    4. LAYOUT-CONTAINER & SEKTIONEN
    ======================================================== */
@@ -812,6 +856,16 @@ textarea {
 #uebermich.font-page-block p {
   line-height: 1.8;
   font-size: 1.05rem;
+}
+
+/* Mobil-Anpassung für das Bild auf der Über-mich-Seite */
+@media (max-width: 768px) {
+    .ueber-bild-klasse { /* Ersetze 'ueber-bild-klasse' durch den echten Klassennamen deines Bildes */
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        max-height: 400px; /* Begrenzt die Höhe, damit man nicht ewig scrollen muss */
+    }
 }
 
 /* ========================================================
