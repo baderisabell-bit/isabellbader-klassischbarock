@@ -263,6 +263,8 @@ nav.main-nav a:hover::after {
   letter-spacing: 1px;
   margin-bottom: 2rem;
   color: #7a6a58;
+  margin-bottom: 3rem !important; 
+  display: block !important;
 }
 
 .testimonial-controls {
@@ -513,9 +515,7 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
-  padding: 8rem 0;
-  margin-bottom: 3rem !important; 
-  display: block !important;
+  padding: 8rem 0 !important; 
 }
 
 /* Das transparente Overlay, das das Bild weichzeichnet/aufhellt */
