@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Klassisch-barocke Dressur München - Isabell Bader</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!--HEADER-->
+<header class="header">
+    <h1>Klassisch-barocke Dressur München - Isabell Bader</h1>
+    
+<button class="menu-toggle" aria-label="Menü öffnen">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+    <nav class="main-nav">
+        <a href="index.html">Startseite</a>
+        <a href="ueber.html">Über Mich</a>
+        <a href="reitunterrichtundberitt.html">Reitunterricht</a>
+        <a href="beritt.html">Beritt</a>
+    </nav>
+</header>
+
+<!-- HERO BILD MIT TEXT (Gleicher Parallax- & Schatten-Stil) -->
+<section class="hero-parallax-section">
+  <!-- Das Bild kommt jetzt aus der CSS per Klasse für den Parallax-Effekt -->
+  <div class="parallax-bg-problempferde"></div>
+  <div class="hero-overlay"></div>
+  
+  <div class="hero-content">
+    <h2 class="hero-title">Schwerpunkt - Problempferde</h2>
+    <p class="hero-subtitle">„Wenn aus einem „Problempferd“ wieder ein Partner wird“</p>
+  </div>
+</section>
+    
+<!-- HANDARBEIT CONTENT -->
+<section id="handarbeit" class="content-section-clean">
+    <div class="content-container">
+        
+        <div class="text-block-main">
+            <p class="intro-paragraph">
+                Für mich gibt es keine Problempferde. Es gibt Pferde, die uns mit ihrem Verhalten zeigen, dass etwas für sie nicht stimmt.
+            </p>
+            
+            <p>
+                In den vielen Jahren, in denen ich mit Pferden arbeite, habe ich bereits viele solcher Pferde kennengelernt. Pferde, bei denen das Reiten schwierig geworden ist, die sich gegen bestimmte Situationen wehren, Angst haben oder mit ihrem Verhalten ihre Menschen vor große Herausforderungen stellen. Jedes dieser Pferde hat seine eigene Geschichte und genau deshalb ist es mir wichtig, nicht nur das Verhalten zu sehen, sondern auch die Ursache dahinter zu verstehen.
+            </p>
+
+            <p>
+                Vielleicht wird dein Pferd beim Reiten hektisch, verweigert bestimmte Situationen, steigt, buckelt oder lässt sich nur schwer motivieren. Vielleicht ist es ängstlich, angespannt oder reagiert scheinbar unberechenbar. Vielleicht hast du selbst schon vieles ausprobiert und weißt nicht mehr, wie du weiterkommen sollst.
+            </p>
+
+            <p>
+                Genau hier möchte ich ansetzen.
+            </p>
+
+            <p>
+                Ich nehme mir die Zeit, dein Pferd wirklich kennenzulernen. Ich möchte verstehen, was es uns mit seinem Verhalten sagen möchte und warum bestimmte Situationen für euch schwierig geworden sind. Für mich geht es nicht darum, ein Pferd möglichst schnell dazu zu bringen, zu funktionieren. Mir geht es darum, Vertrauen aufzubauen und gemeinsam einen Weg zu finden, auf dem sich Pferd und Mensch wieder sicher und verstanden fühlen.
+            </p>
+
+            <!-- ZUSATZBILD: Zweites Mal das identische Bild zur stilvollen Auflockerung -->
+            <div class="embedded-image-wrap">
+                <img src="images/galopp.png" alt="Seitengang am langen Zügel" class="embedded-img">
+            </div>
+            
+            <p>
+               Ich weiß aus meiner täglichen Arbeit, dass manche Wege länger dauern als andere. Gerade bei Pferden, die bereits schlechte Erfahrungen gemacht haben oder über längere Zeit mit einem bestimmten Verhalten reagiert haben, braucht es Geduld und Konsequenz. Ich möchte deinem Pferd die Sicherheit geben, die es braucht, und gleichzeitig dir zeigen, wie du es besser verstehen kannst.
+            </p>
+            
+            <p>
+                Mir ist wichtig, dass du nicht nur siehst, dass sich etwas verändert, sondern auch verstehst, warum. Denn je besser wir unser Pferd verstehen, desto leichter können wir ihm Sicherheit geben. Mein Ziel ist, dass ihr wieder Vertrauen zueinander findet und Freude an eurer gemeinsamen Arbeit habt.
+            </p>
+            
+            <h2>Teil oder Vollberitt</h2>
+            <p>Nicht immer ist es möglich, ein Pferd ausschließlich selbst zu trainieren. Gerade bei schwierigen Situationen kann es hilfreich sein, wenn ich dein Pferd zusätzlich im Teil oder Vollberitt begleite.</p>
+            <a href="beritt.html" class="btn btn-cta">Mehr erfahren</a>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- OUTRO / CALL TO ACTION -->
+        <div class="outro-wrapper">
+            <p class="outro-text">
+                Bei Interesse freue ich mich über eine Nachricht mit kurzer Beschreibung von Pferd und Ziel.
+            </p>
+            <a href="#kontakt" class="btn btn-cta">Nachricht senden</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="contact-section">
+    <div class="contact-box">
+      <h2>Kontakt</h2>
+      <p>Schreib mir gerne für ein Kennenlernen.</p>
+
+      <form id="contactForm" action="https://formspree.io/f/mpqwwgkd" method="POST">
+        
+        <div class="form-row">
+          <input type="text" name="vorname" placeholder="Vorname" required>
+          <input type="text" name="nachname" placeholder="Nachname" required>
+        </div>
+
+        <div class="form-row">
+          <input type="email" name="email" placeholder="E-Mail" required>
+          <input type="text" name="betreff" placeholder="Betreff" required>
+        </div>
+
+        <textarea name="nachricht" placeholder="Deine Nachricht" required></textarea>
+
+        <div class="button-wrapper">
+          <button type="submit" class="btn">Senden</button>
+        </div>
+
+      </form>
+
+      <p id="dankeText" class="thank-you">Danke für deine Nachricht!</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-grid">
+
+    <div class="footer-block">
+      <h3>Navigation</h3>
+      <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="ueber.html">Über mich</a></li>
+          <li><a href="reitunterrichtundberitt.html">Reitunterricht</a></li>
+          <li><a href="beritt.html">Beritt</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-block">
+      <h3>Rechtliches</h3>
+      <ul>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="agb.html">AGB</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 – Klassisch-barocke Reitkunst
+  </div>
+
+</footer>
+
+</body>
+</html>
