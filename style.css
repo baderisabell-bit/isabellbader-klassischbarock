@@ -1348,6 +1348,32 @@ textarea {
     z-index: 1;
 }
 
+  @media (max-width: 768px) {
+    .hero-parallax-dark,
+    .parallax-bg-kinderreitunterricht {
+      background-position: 30% center;
+    }
+
+    .kinderreitunterricht-hero {
+      height: 60vh;
+    }
+
+    .kinderreitunterricht-hero .parallax-bg-kinderreitunterricht {
+      background-attachment: scroll;
+    }
+
+    .kinderreitunterricht-hero .hero-content {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 1rem;
+    }
+
+    .kinderreitunterricht-hero .hero-title {
+      font-size: 1.9rem;
+      overflow-wrap: break-word;
+    }
+  }
+
 /* Elegantes Listen-Design */
 .design-list {
     list-style: none;
